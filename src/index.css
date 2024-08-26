@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: beautique;
+    src: url("/fonts/beautique_display/BeautiqueDisplay-Regular.otf");
+  }
+  @font-face {
+    font-family: beautique;
+    src: url("/fonts/beautique_display/BeautiqueDisplay-Medium.otf");
+    font-weight: 500;
+  }
+  @font-face {
+    font-family: beautique;
+    src: url("/fonts/beautique_display/BeautiqueDisplay-MediumItalic.otf");
+    font-weight: 500;
+    font-style: italic;
+  }
+  @font-face {
+    font-family: beautique;
+    src: url("/fonts/beautique_display/BeautiqueDisplay-Italic.otf");
+    font-style: italic;
+  }
+}
