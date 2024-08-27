@@ -15,7 +15,7 @@ export default function HeroSection() {
             </li>
             <li className="text-white">
               <a
-                href="#"
+                href="#projects"
                 className="font-montserrat text-2xl font-normal hover:underline hover:underline-offset-8"
               >
                 Dự án
@@ -23,7 +23,7 @@ export default function HeroSection() {
             </li>
             <li className="text-white">
               <a
-                href="#"
+                href="#services"
                 className="font-montserrat text-2xl font-normal hover:underline hover:underline-offset-8"
               >
                 Dịch vụ
