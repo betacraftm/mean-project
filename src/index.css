@@ -25,3 +25,33 @@
     font-style: italic;
   }
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
+#about_us_h2::before {
+  content: '"';
+  display: inline-block;
+  font-size: 128px;
+  rotate: 180deg;
+  transform: scaleX(-1);
+  height: 50px;
+  line-height: 120px;
+  padding-right: 0.5rem;
+  color: #193f53b2;
+  font-family: beautique;
+}
+
+#about_us_p::after {
+  content: '"';
+  display: inline-block;
+  font-size: 128px;
+  font-family: beautique;
+  transform: scaleX(-1);
+  line-height: 128px;
+  color: #193f53b2;
+  position: absolute;
+  bottom: -110px;
+  margin-left: 0.7rem;
+}

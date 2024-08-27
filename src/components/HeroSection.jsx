@@ -7,7 +7,7 @@ export default function HeroSection() {
           <ul className="flex gap-8 self-center">
             <li className="text-white">
               <a
-                href="#"
+                href="#about-us"
                 className="font-montserrat text-2xl font-normal hover:underline hover:underline-offset-8"
               >
                 Về chúng tôi
