@@ -25,3 +25,120 @@
     font-style: italic;
   }
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
+#about_us_h2::before {
+  content: '"';
+  display: inline-block;
+  font-size: 128px;
+  rotate: 180deg;
+  transform: scaleX(-1);
+  height: 50px;
+  line-height: 120px;
+  padding-right: 0.5rem;
+  color: #193f53b2;
+  font-family: beautique;
+}
+
+#about_us_p::after {
+  content: '"';
+  display: inline-block;
+  font-size: 128px;
+  font-family: beautique;
+  transform: scaleX(-1);
+  line-height: 128px;
+  color: #193f53b2;
+  position: absolute;
+  bottom: -110px;
+  margin-left: 0.7rem;
+}
+
+#number-01::after {
+  content: "+";
+  display: inline-block;
+  font-family: beautique;
+  position: absolute;
+  top: -45px;
+  font-size: 80px;
+}
+
+#number-01::before {
+  content: "dự án";
+  display: inline-block;
+  font-family: "Montserrat", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  position: absolute;
+  right: 75px;
+  bottom: 218px;
+}
+
+#number-02::after {
+  content: "+";
+  display: inline-block;
+  font-family: beautique;
+  position: absolute;
+  top: 115px;
+  font-size: 80px;
+}
+
+#number-02::before {
+  content: "khách hàng";
+  display: inline-block;
+  font-family: "Montserrat", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  position: absolute;
+  right: 25px;
+  bottom: 55px;
+}
+
+#number-03::after {
+  content: "+";
+  display: inline-block;
+  font-family: beautique;
+  position: absolute;
+  top: -45px;
+  font-size: 80px;
+}
+
+#number-03::before {
+  content: "khách hàng";
+  display: inline-block;
+  font-family: "Montserrat", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  position: absolute;
+  right: 25px;
+  bottom: 218px;
+}
+
+#about-us-slogan::before {
+  content: '"';
+  display: inline-block;
+  font-size: 128px;
+  rotate: 180deg;
+  transform: scaleX(-1);
+  color: #193f53b2;
+  font-family: beautique;
+  font-style: normal;
+  position: absolute;
+  left: 0px;
+  top: -75px;
+}
+
+#about-us-slogan::after {
+  content: '"';
+  display: inline-block;
+  font-size: 128px;
+  font-family: beautique;
+  transform: scaleX(-1);
+  color: #193f53b2;
+  position: absolute;
+  font-style: normal;
+  bottom: -60px;
+  margin-left: 10px;
+}
