@@ -6,6 +6,7 @@ export default {
       fontFamily: {
         montserrat: ["Montserrat", "san-serif"],
         beautique: ["beautique", "serif"],
+        btbeau: ["bt-beau-san", "san-serif"],
       },
     },
   },

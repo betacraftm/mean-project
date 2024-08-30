@@ -24,6 +24,11 @@
     src: url("/fonts/beautique_display/BeautiqueDisplay-Italic.otf");
     font-style: italic;
   }
+  @font-face {
+    font-family: bt-beau-san;
+    src: url("/fonts/BT-Beau-Sans/BT-BeauSans-Bold.ttf");
+    font-weight: 700;
+  }
 }
 
 html {
@@ -141,4 +146,9 @@ html {
   font-style: normal;
   bottom: -60px;
   margin-left: 10px;
+}
+
+.css-99wn1p-MuiList-root-MuiMenu-list {
+  background-color: black;
+  padding: 15px !important;
 }
