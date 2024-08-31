@@ -7,11 +7,84 @@ import {
 } from "@mui/material";
 import { useState } from "react";
 import KeyboardArrowDownOutlinedIcon from "@mui/icons-material/KeyboardArrowDownOutlined";
+import toast, { Toaster } from "react-hot-toast";
+import axios from "axios";
 
 export default function Contact() {
-  const [service, setService] = useState("");
+  const [formData, setFormData] = useState({
+    fullName: "",
+    phoneNumber: "",
+    service: "",
+    createdAt: "",
+  });
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    const now = new Date();
+    const vietnameseDateTime = now.toLocaleString("vi-VN", {
+      day: "2-digit",
+      month: "2-digit",
+      year: "numeric",
+      hour: "2-digit",
+      minute: "2-digit",
+      second: "2-digit",
+    });
+
+    formData.createdAt = vietnameseDateTime;
+    const form_data = new FormData();
+    for (let key in formData) {
+      form_data.append(key, formData[key]);
+    }
+
+    const toastId = toast.loading("Đang gửi dữ liệu", {
+      style: {
+        fontSize: "24px",
+        fontFamily: "Montserrat",
+        maxWidth: "fit-content",
+        padding: "15px",
+      },
+    });
+    try {
+      await axios.post(
+        "https://script.google.com/macros/s/AKfycbzJuY_FqsejcAgR18o789TI2C2-gk_LGTqTPpe9VOeT_D17Fa9bFeJcfLGMz6x6pRcYPQ/exec",
+        form_data,
+      );
+      toast.success("Chúng tôi sẽ liên lạc với bạn trong thời gian sớm nhất", {
+        style: {
+          fontSize: "24px",
+          fontFamily: "Montserrat",
+          maxWidth: "fit-content",
+          padding: "15px",
+        },
+        duration: 5000,
+        id: toastId,
+      });
+      setFormData({
+        ...formData,
+        fullName: "",
+        service: "",
+        phoneNumber: "",
+        createdAt: "",
+      });
+    } catch (error) {
+      console.log(error.message);
+      toast.error("Có lỗi trong quá trình gửi dữ liệu", {
+        style: {
+          fontSize: "24px",
+          fontFamily: "Montserrat",
+          maxWidth: "fit-content",
+          padding: "15px",
+        },
+        id: toastId,
+      });
+    }
+  };
+
   return (
     <div className="flex min-h-screen items-center justify-center bg-[url('contact.png')] bg-cover bg-no-repeat">
+      <div>
+        <Toaster position="bottom-center" />
+      </div>
       <div
         id="contact"
         className="flex max-w-7xl justify-center py-16 2xl:py-0"
@@ -22,16 +95,20 @@ export default function Contact() {
           </h2>
         </div>
         <div className="w-1/2">
-          <p className="font-btbeau mb-11 text-4xl font-bold text-white">
+          <p className="mb-11 font-btbeau text-4xl font-bold text-white">
             Để lại thông tin của bạn ở đây nhé!
           </p>
-          <form autoComplete="off" className="mb-72">
+          <form id="customer-form" autoComplete="off">
             <FormControl fullWidth>
               <TextField
                 required
                 fullWidth
                 variant="standard"
                 label="Họ và Tên"
+                value={formData?.fullName}
+                onChange={(e) =>
+                  setFormData({ ...formData, fullName: e.target.value })
+                }
                 type="text"
                 sx={{
                   marginBottom: "55px",
@@ -77,6 +154,10 @@ export default function Contact() {
                 variant="standard"
                 label="Số điện thoại"
                 type="text"
+                value={formData?.phoneNumber}
+                onChange={(e) =>
+                  setFormData({ ...formData, phoneNumber: e.target.value })
+                }
                 sx={{
                   marginBottom: "55px",
                   input: {
@@ -140,6 +221,7 @@ export default function Contact() {
                     display: "none",
                   },
                 },
+                marginBottom: "288px",
               }}
             >
               <InputLabel
@@ -151,15 +233,19 @@ export default function Contact() {
                     color: "white",
                   },
                 }}
-                id="service"
+                id="service-list"
               >
                 Chọn hạng mục muốn thi công
               </InputLabel>
               <Select
                 IconComponent={KeyboardArrowDownOutlinedIcon}
-                labelId="service"
-                value={service}
-                onChange={(e) => setService(e.target.value)}
+                labelId="service-list"
+                value={formData?.service}
+                onChange={(e) =>
+                  setFormData({ ...formData, service: e.target.value })
+                }
+                label="Service"
+                defaultValue={""}
                 sx={{
                   "& .MuiSvgIcon-root": {
                     color: "white",
@@ -193,7 +279,7 @@ export default function Contact() {
                       borderBottom: "1px solid white",
                     },
                   }}
-                  value={10}
+                  value={"nha_o"}
                 >
                   Nhà ở
                 </MenuItem>
@@ -213,7 +299,7 @@ export default function Contact() {
                       borderBottom: "1px solid white",
                     },
                   }}
-                  value={20}
+                  value={"dich_vu"}
                 >
                   Dịch vụ
                 </MenuItem>
@@ -232,18 +318,22 @@ export default function Contact() {
                       },
                     },
                   }}
-                  value={30}
+                  value={"thi_cong"}
                 >
                   Thi công
                 </MenuItem>
               </Select>
             </FormControl>
+            <div className="flex justify-end">
+              <button
+                type="submit"
+                onClick={handleSubmit}
+                className="border-[3px] border-white px-6 py-4 font-montserrat text-2xl font-bold text-white transition hover:bg-white hover:text-black"
+              >
+                ĐẶT LỊCH NGAY
+              </button>
+            </div>
           </form>
-          <div className="flex justify-end">
-            <button className="border-[3px] border-white px-6 py-4 font-montserrat text-2xl font-bold text-white transition hover:bg-white hover:text-black">
-              ĐẶT LỊCH NGAY
-            </button>
-          </div>
         </div>
       </div>
     </div>
