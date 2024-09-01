@@ -1,6 +1,6 @@
 export default function Question() {
   return (
-    <div id="questions" className="mx-auto max-w-7xl py-16">
+    <div id="questions" className="mx-auto max-w-7xl snap-start py-16">
       <h2 className="mb-12 font-beautique text-5xl font-medium text-[#193F53]">
         Một số câu hỏi thường gặp
       </h2>

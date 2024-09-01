@@ -6,7 +6,7 @@ import Footer from "./components/Footer";
 
 export default function App() {
   return (
-    <main>
+    <main className="snap-y">
       <HeroSection />
       <AboutUs />
       <Contact />
