@@ -228,7 +228,7 @@ export default function Contact() {
                     display: "none",
                   },
                 },
-                marginBottom: "288px",
+                marginBottom: "110px",
               }}
             >
               <InputLabel
