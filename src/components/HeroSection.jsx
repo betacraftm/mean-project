@@ -1,6 +1,6 @@
 export default function HeroSection() {
   return (
-    <div className="bg-[url('hero-image.png')] bg-cover bg-no-repeat">
+    <div className="bg-[url('/hero-image.png')] bg-cover bg-no-repeat">
       <div className="mx-auto flex min-h-screen max-w-7xl flex-col justify-between py-7">
         <nav className="flex w-full justify-between">
           <img src="logo.svg" alt="Mean Agency" className="h-16 w-16" />

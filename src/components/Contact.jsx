@@ -80,7 +80,7 @@ export default function Contact() {
   return (
     <div
       id="contact"
-      className="flex min-h-screen snap-start items-center justify-center bg-[url('contact.png')] bg-cover bg-no-repeat"
+      className="flex min-h-screen snap-start items-center justify-center bg-[url('/contact.png')] bg-cover bg-no-repeat"
     >
       <div>
         <Toaster
