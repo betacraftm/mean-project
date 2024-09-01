@@ -18,8 +18,25 @@ export default function Contact() {
     createdAt: "",
   });
 
+  const formRegex = () => {
+    const vietnamCharacter =
+      "ÀÁÂÃÈÉÊÌÍÒÓÔÕÙÚĂĐĨŨƠàáâãèéêìíòóôõùúăđĩũơƯĂẠẢẤẦẨẪẬẮẰẲẴẶẸẺẼỀỀỂưăạảấầẩẫậắằẳẵặẹẻẽềềểỄỆỈỊỌỎỐỒỔỖỘỚỜỞỠỢỤỦỨỪễếệỉịọỏốồổỗộớờởỡợụủứừỬỮỰỲỴÝỶỸửữựỳỵỷỹ";
+    const fullNameReg = new RegExp(`^[A-Za-z${vietnamCharacter}\\s]{2,}$`, "g");
+    const phoneNumberReg = new RegExp(`^\\d+$`, "g");
+    const { fullName, phoneNumber, service } = formData;
+    if (!fullName || !phoneNumber || !service)
+      return toast.error("Xin hãy điền vào tất cả các ô");
+    if (!fullNameReg.test(fullName)) return toast.error("Tên không hợp lệ");
+    if (!phoneNumberReg.test(phoneNumber))
+      return toast.error("Số điện thoại không hợp lệ");
+    return false;
+  };
+
   const handleSubmit = async (e) => {
     e.preventDefault();
+    if (formRegex()) {
+      return;
+    }
     const now = new Date();
     const vietnameseDateTime = now.toLocaleString("vi-VN", {
       day: "2-digit",
@@ -36,27 +53,13 @@ export default function Contact() {
       form_data.append(key, formData[key]);
     }
 
-    const toastId = toast.loading("Đang gửi dữ liệu", {
-      style: {
-        fontSize: "24px",
-        fontFamily: "Montserrat",
-        maxWidth: "fit-content",
-        padding: "15px",
-      },
-    });
+    const toastId = toast.loading("Đang gửi dữ liệu");
     try {
       await axios.post(
         "https://script.google.com/macros/s/AKfycbzJuY_FqsejcAgR18o789TI2C2-gk_LGTqTPpe9VOeT_D17Fa9bFeJcfLGMz6x6pRcYPQ/exec",
         form_data,
       );
       toast.success("Chúng tôi sẽ liên lạc với bạn trong thời gian sớm nhất", {
-        style: {
-          fontSize: "24px",
-          fontFamily: "Montserrat",
-          maxWidth: "fit-content",
-          padding: "15px",
-        },
-        duration: 5000,
         id: toastId,
       });
       setFormData({
@@ -69,12 +72,6 @@ export default function Contact() {
     } catch (error) {
       console.log(error.message);
       toast.error("Có lỗi trong quá trình gửi dữ liệu", {
-        style: {
-          fontSize: "24px",
-          fontFamily: "Montserrat",
-          maxWidth: "fit-content",
-          padding: "15px",
-        },
         id: toastId,
       });
     }
@@ -83,7 +80,17 @@ export default function Contact() {
   return (
     <div className="flex min-h-screen items-center justify-center bg-[url('contact.png')] bg-cover bg-no-repeat">
       <div>
-        <Toaster position="bottom-center" />
+        <Toaster
+          position="bottom-center"
+          toastOptions={{
+            style: {
+              fontSize: "24px",
+              fontFamily: "Montserrat",
+              maxWidth: "fit-content",
+              padding: "15px",
+            },
+          }}
+        />
       </div>
       <div
         id="contact"
