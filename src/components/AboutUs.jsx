@@ -2,7 +2,10 @@ import Service from "./Service";
 
 export default function AboutUs() {
   return (
-    <div id="about-us" className="mx-auto min-h-screen max-w-7xl pb-24 pt-11">
+    <div
+      id="about-us"
+      className="mx-auto min-h-screen max-w-7xl snap-start pb-24 pt-11"
+    >
       <div className="flex gap-28">
         <div className="w-3/5">
           <div className="relative">

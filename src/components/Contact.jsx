@@ -78,7 +78,10 @@ export default function Contact() {
   };
 
   return (
-    <div className="flex min-h-screen items-center justify-center bg-[url('contact.png')] bg-cover bg-no-repeat">
+    <div
+      id="contact"
+      className="flex min-h-screen snap-start items-center justify-center bg-[url('contact.png')] bg-cover bg-no-repeat"
+    >
       <div>
         <Toaster
           position="bottom-center"
@@ -92,10 +95,7 @@ export default function Contact() {
           }}
         />
       </div>
-      <div
-        id="contact"
-        className="flex max-w-7xl justify-center py-16 2xl:py-0"
-      >
+      <div className="flex max-w-7xl justify-center py-16 2xl:py-0">
         <div className="w-1/2">
           <h2 className="font-beautique text-5xl font-medium italic leading-[70px] text-white">
             Hãy cùng nhau tạo nên điều gì đó tuyệt vời !

@@ -1,6 +1,9 @@
 export default function Service() {
   return (
-    <div id="services" className="mt-8 flex scroll-mt-48 flex-col items-center">
+    <div
+      id="services"
+      className="mt-8 flex snap-start scroll-mt-48 flex-col items-center"
+    >
       <h3 className="w-[706px] text-center font-beautique text-5xl italic leading-[70px] text-[#193F53]">
         Chúng tôi đem đến sự sáng tạo trong đa dạng công trình !
       </h3>

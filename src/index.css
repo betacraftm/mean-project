@@ -29,6 +29,10 @@
     src: url("/fonts/BT-Beau-Sans/BT-BeauSans-Bold.ttf");
     font-weight: 700;
   }
+  @font-face {
+    font-family: bt-beau-san;
+    src: url("/fonts/BT-Beau-Sans/BT-BeauSans-Regular.ttf");
+  }
 }
 
 html {
