@@ -59,7 +59,7 @@ export default function HeroSection() {
             Interior creative agency
           </p>
           <button className="mt-14 border-[3px] border-white px-6 py-4 font-montserrat font-bold text-white transition hover:bg-white hover:text-black">
-            ĐẶT LỊCH NGAY
+            <a href="#contact">ĐẶT LỊCH NGAY</a>
           </button>
         </div>
 
