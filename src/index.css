@@ -152,7 +152,7 @@ html {
   margin-left: 10px;
 }
 
-.css-99wn1p-MuiList-root-MuiMenu-list {
-  background-color: black;
+.MuiList-root {
+  background-color: black !important;
   padding: 15px !important;
 }
