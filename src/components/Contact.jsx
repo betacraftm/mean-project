@@ -276,7 +276,7 @@ export default function Contact() {
                       fontSize: "20px",
                       fontFamily: "Montserrat",
                       color: "white",
-                      padding: "20px 0px",
+                      padding: "20px 8px",
                       borderRadius: "2px",
                       transition: "all 150ms",
                       "&:hover": {
@@ -296,7 +296,7 @@ export default function Contact() {
                       fontSize: "20px",
                       fontFamily: "Montserrat",
                       color: "white",
-                      padding: "20px 0px",
+                      padding: "20px 8px",
                       borderRadius: "2px",
                       transition: "all 150ms",
                       "&:hover": {
@@ -316,7 +316,7 @@ export default function Contact() {
                       fontSize: "20px",
                       fontFamily: "Montserrat",
                       color: "white",
-                      padding: "20px 0px",
+                      padding: "20px 8px",
                       borderRadius: "2px",
                       transition: "all 150ms",
                       "&:hover": {
