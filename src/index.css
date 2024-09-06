@@ -25,6 +25,16 @@
     font-style: italic;
   }
   @font-face {
+    font-family: beautique;
+    src: url("/fonts/beautique_display/BeautiqueDisplay-Bold.otf");
+    font-weight: 700;
+  }
+  @font-face {
+    font-family: beautique;
+    src: url("/fonts/beautique_display/BeautiqueDisplay-Black.otf");
+    font-weight: 900;
+  }
+  @font-face {
     font-family: bt-beau-san;
     src: url("/fonts/BT-Beau-Sans/BT-BeauSans-Bold.ttf");
     font-weight: 700;
@@ -82,7 +92,7 @@ html {
   font-weight: 400;
   position: absolute;
   right: 75px;
-  bottom: 218px;
+  bottom: 245px;
 }
 
 #number-02::after {
@@ -102,27 +112,7 @@ html {
   font-weight: 400;
   position: absolute;
   right: 25px;
-  bottom: 55px;
-}
-
-#number-03::after {
-  content: "+";
-  display: inline-block;
-  font-family: beautique;
-  position: absolute;
-  top: -45px;
-  font-size: 80px;
-}
-
-#number-03::before {
-  content: "khách hàng";
-  display: inline-block;
-  font-family: "Montserrat", sans-serif;
-  font-size: 24px;
-  font-weight: 400;
-  position: absolute;
-  right: 25px;
-  bottom: 218px;
+  bottom: 83px;
 }
 
 #about-us-slogan::before {

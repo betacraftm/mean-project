@@ -1,12 +1,13 @@
 import Service from "./Service";
+import Project from "./Project";
 
 export default function AboutUs() {
   return (
     <div
       id="about-us"
-      className="mx-auto min-h-screen max-w-7xl snap-start pb-24 pt-11"
+      className="mx-auto min-h-screen max-w-7xl snap-start pb-24 pt-5"
     >
-      <div className="flex gap-28">
+      <div className="flex gap-32">
         <div className="w-3/5">
           <div className="relative">
             <h2
@@ -51,22 +52,24 @@ export default function AboutUs() {
             <div className="relative w-1/3">
               <h3
                 id="number-03"
-                className="font-beautique text-[64px] font-medium text-[#193F53]"
+                className="w-3/4 font-beautique text-[32px] font-bold italic text-[#193F53]"
               >
-                60
+                Chất lượng & cam kết
               </h3>
               <p className="text-justify font-montserrat text-lg">
-                Chúng tôi tự tin đem đến những không gian sống sáng tạo, và mang
-                đậm tính cá nhân của người chủ sở hữu.
+                Mean Design luôn chú trọng đến từng khía cạnh trong quá trình
+                thiết kế và thi công. Từ việc lựa chọn vật liệu, phối màu, cho
+                đến sắp xếp không gian, tất cả đều được thực hiện với tiêu chuẩn
+                cao nhất.
               </p>
             </div>
           </div>
         </div>
         <div className="mt-7 flex items-center justify-between">
-          <img src="about-us.png" alt="Mean Design" className="" />
+          <img src="master-bedroom.png" alt="Mean Design" className="" />
         </div>
       </div>
-      <div id="projects" className="relative scroll-mt-10">
+      <div className="relative scroll-mt-10">
         <p
           id="about-us-slogan"
           className="ml-12 mt-24 w-3/5 font-beautique text-4xl font-medium italic leading-[56px] text-[#193F53]"
@@ -76,25 +79,25 @@ export default function AboutUs() {
       </div>
       <div className="ml-[65px] mt-20 flex items-center justify-center">
         <div>
-          <p className="mb-10 border-l-2 border-[#193F53] pl-2 pt-1 font-beautique text-3xl leading-none text-[#193F53]">
+          <img src="room-1.png" />
+          <p className="mt-4 border-l-2 border-[#193F53] pl-2 pt-1 font-beautique text-3xl font-bold leading-none text-[#193F53]">
             Tinh tế
           </p>
-          <img src="room-1.png" />
         </div>
-        <div className="relative left-[-20px] top-24">
-          <p className="mb-10 ml-5 border-l-2 border-[#193F53] pl-2 font-beautique text-3xl text-[#193F53]">
+        <div className="relative left-[-20px] top-24 z-10">
+          <img src="room-2.png" />
+          <p className="ml-3 mt-4 border-l-2 border-[#193F53] pl-2 font-beautique text-3xl font-bold text-[#193F53]">
             Tận tâm
           </p>
-          <img src="room-2.png" />
         </div>
         <div className="relative left-[-45px]">
-          <p className="mb-10 border-l-2 border-[#193F53] pl-2 font-beautique text-3xl text-[#193F53]">
+          <img src="room-3.png" />
+          <p className="ml-7 mt-4 border-l-2 border-[#193F53] pl-2 font-beautique text-3xl font-bold text-[#193F53]">
             Tỉ mỉ
           </p>
-          <img src="room-3.png" />
         </div>
       </div>
-      <div className="mx-auto mt-40 h-[4px] w-[1010px] bg-[#193F53]"></div>
+      <Project />
       <Service />
     </div>
   );

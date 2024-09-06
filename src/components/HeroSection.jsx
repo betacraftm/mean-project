@@ -39,17 +39,17 @@ export default function HeroSection() {
 
         <div className="relative flex flex-col items-center justify-center">
           <img
-            src="vector-1.svg"
-            className="absolute right-[320px] top-[-40px]"
+            src="vector-1.png"
+            className="absolute right-[165px] top-[-40px]"
           />
-          <p className="absolute right-[185px] top-[-80px] font-montserrat text-2xl text-white">
+          <p className="absolute right-[165px] top-[-80px] font-montserrat text-2xl text-white">
             Không gian sáng tạo
           </p>
           <img
-            src="vector-2.svg"
-            className="absolute bottom-[120px] left-[150px]"
+            src="vector-2.png"
+            className="absolute bottom-[120px] left-[60px]"
           />
-          <p className="absolute bottom-[80px] left-[65px] font-montserrat text-2xl text-white">
+          <p className="absolute bottom-[80px] left-[63px] font-montserrat text-2xl text-white">
             Ý nghĩa thiết kế
           </p>
           <h1 className="font-beautique text-4xl text-[148px] leading-[140px] text-white">

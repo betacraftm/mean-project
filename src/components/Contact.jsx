@@ -15,6 +15,7 @@ export default function Contact() {
     fullName: "",
     phoneNumber: "",
     service: "",
+    address: "",
     createdAt: "",
   });
 
@@ -23,8 +24,8 @@ export default function Contact() {
       "ÀÁÂÃÈÉÊÌÍÒÓÔÕÙÚĂĐĨŨƠàáâãèéêìíòóôõùúăđĩũơƯĂẠẢẤẦẨẪẬẮẰẲẴẶẸẺẼỀỀỂưăạảấầẩẫậắằẳẵặẹẻẽềềểỄỆỈỊỌỎỐỒỔỖỘỚỜỞỠỢỤỦỨỪễếệỉịọỏốồổỗộớờởỡợụủứừỬỮỰỲỴÝỶỸửữựỳỵỷỹ";
     const fullNameReg = new RegExp(`^[A-Za-z${vietnamCharacter}\\s]{2,}$`, "g");
     const phoneNumberReg = new RegExp(`^\\d+$`, "g");
-    const { fullName, phoneNumber, service } = formData;
-    if (!fullName || !phoneNumber || !service)
+    const { fullName, phoneNumber, service, address } = formData;
+    if (!fullName || !phoneNumber || !service || !address)
       return toast.error("Xin hãy điền vào tất cả các ô");
     if (!fullNameReg.test(fullName)) return toast.error("Tên không hợp lệ");
     if (!phoneNumberReg.test(phoneNumber))
@@ -67,6 +68,7 @@ export default function Contact() {
         fullName: "",
         service: "",
         phoneNumber: "",
+        address: "",
         createdAt: "",
       });
     } catch (error) {
@@ -95,7 +97,7 @@ export default function Contact() {
           }}
         />
       </div>
-      <div className="flex max-w-7xl justify-center py-16">
+      <div className="flex max-w-7xl justify-center py-6">
         <div className="w-1/2">
           <h2 className="font-beautique text-5xl font-medium italic leading-[70px] text-white">
             Hãy cùng nhau tạo nên điều gì đó tuyệt vời !
@@ -118,7 +120,7 @@ export default function Contact() {
                 }
                 type="text"
                 sx={{
-                  marginBottom: "55px",
+                  marginBottom: "30px",
                   input: {
                     color: "white",
                     fontFamily: "Montserrat",
@@ -155,6 +157,8 @@ export default function Contact() {
                   },
                 }}
               />
+            </FormControl>
+            <FormControl fullWidth>
               <TextField
                 required
                 fullWidth
@@ -166,7 +170,7 @@ export default function Contact() {
                   setFormData({ ...formData, phoneNumber: e.target.value })
                 }
                 sx={{
-                  marginBottom: "55px",
+                  marginBottom: "30px",
                   input: {
                     color: "white",
                     fontFamily: "Montserrat",
@@ -228,7 +232,7 @@ export default function Contact() {
                     display: "none",
                   },
                 },
-                marginBottom: "110px",
+                marginBottom: "30px",
               }}
             >
               <InputLabel
@@ -286,7 +290,7 @@ export default function Contact() {
                       borderBottom: "1px solid white",
                     },
                   }}
-                  value={"nha_o"}
+                  value={"Nhà ở"}
                 >
                   Nhà ở
                 </MenuItem>
@@ -306,7 +310,7 @@ export default function Contact() {
                       borderBottom: "1px solid white",
                     },
                   }}
-                  value={"dich_vu"}
+                  value={"Dịch vụ"}
                 >
                   Dịch vụ
                 </MenuItem>
@@ -325,17 +329,67 @@ export default function Contact() {
                       },
                     },
                   }}
-                  value={"thi_cong"}
+                  value={"Thi công"}
                 >
                   Thi công
                 </MenuItem>
               </Select>
             </FormControl>
+            <FormControl fullWidth>
+              <TextField
+                required
+                fullWidth
+                variant="standard"
+                label="Địa chỉ"
+                type="text"
+                value={formData?.address}
+                onChange={(e) =>
+                  setFormData({ ...formData, address: e.target.value })
+                }
+                sx={{
+                  marginBottom: "55px",
+                  input: {
+                    color: "white",
+                    fontFamily: "Montserrat",
+                    fontSize: "20px",
+                    paddingTop: "15px",
+                    paddingBottom: "10px",
+                    fontWeight: "300",
+                  },
+                  "& .MuiInputLabel-standard": {
+                    color: "white",
+                    fontSize: "20px",
+                    fontWeight: "400",
+                    fontFamily: "Montserrat",
+                    "&.Mui-focused": {
+                      color: "white",
+                    },
+                    "& .MuiFormLabel-asterisk": {
+                      display: "none",
+                    },
+                  },
+                  "& .MuiInput-root": {
+                    ":hover:not(.Mui-focused)": {
+                      "&:before": {
+                        borderColor: "white",
+                      },
+                    },
+                    "&:before": {
+                      borderColor: "white",
+                    },
+                    "&:after": {
+                      transition: "none",
+                      borderColor: "white",
+                    },
+                  },
+                }}
+              />
+            </FormControl>
             <div className="flex justify-end">
               <button
                 type="submit"
                 onClick={handleSubmit}
-                className="border-[3px] border-white px-6 py-4 font-montserrat text-2xl font-bold text-white transition hover:bg-white hover:text-black"
+                className="border-[3px] border-white px-5 py-3 font-montserrat text-xl font-bold text-white transition hover:bg-white hover:text-black"
               >
                 ĐẶT LỊCH NGAY
               </button>
