@@ -3,13 +3,13 @@ import ArrowCircleUpIcon from "@mui/icons-material/ArrowCircleUp";
 export default function Footer() {
   return (
     <>
-      <footer className="mx-auto flex max-w-7xl justify-between border-b border-black py-16">
-        <div className="font-btbeau">
+      <footer className="mx-auto flex max-w-7xl justify-between border-b border-black py-16 font-btbeau">
+        <div>
           <h4 className="mb-9 text-xl font-bold text-[#193F53]">Văn phòng</h4>
           <p className="font-bold text-[#BEBEBE]">Địa chỉ</p>
-          <p className="mt-1">V1- A03 Terra An Hưng,</p>
-          <p>Tố Hữu, La Khê,</p>
-          <p>Hà Đông, Hà Nội</p>
+          <p className="mt-1 text-[#4B4B4B]">V1- A03 Terra An Hưng,</p>
+          <p className="text-[#4B4B4B]">Tố Hữu, La Khê,</p>
+          <p className="text-[#4B4B4B]">Hà Đông, Hà Nội</p>
         </div>
         <div>
           <h4 className="mb-9 text-xl font-bold text-[#193F53]">Liên hệ</h4>
@@ -37,10 +37,10 @@ export default function Footer() {
           </div>
         </div>
         <div className="relative w-[330px]">
-          <h4 className="text-xl font-bold text-[#193F53]">
+          <h4 className="w-[360px] text-xl font-bold text-[#193F53]">
             Hãy để lại thông tin để cùng nhau tạo nên không gian sống !
           </h4>
-          <span className="absolute right-[10px] top-7">
+          <span className="absolute right-[-4px] top-7">
             <a href="#contact">
               <ArrowCircleUpIcon sx={{ height: "24px", width: "24px" }} />
             </a>

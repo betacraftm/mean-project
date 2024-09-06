@@ -33,7 +33,7 @@ export default function Question() {
               sx={{
                 "& .MuiTypography-root": {
                   fontFamily: "Montserrat",
-                  fontWeight: "700",
+                  fontWeight: "600",
                   fontSize: "24px",
                   color: "#193F53",
                 },
@@ -74,7 +74,7 @@ export default function Question() {
               sx={{
                 "& .MuiTypography-root": {
                   fontFamily: "Montserrat",
-                  fontWeight: "700",
+                  fontWeight: "600",
                   fontSize: "24px",
                   color: "#193F53",
                 },
@@ -147,7 +147,7 @@ export default function Question() {
               sx={{
                 "& .MuiTypography-root": {
                   fontFamily: "Montserrat",
-                  fontWeight: "700",
+                  fontWeight: "600",
                   fontSize: "24px",
                   color: "#193F53",
                 },
@@ -260,7 +260,7 @@ export default function Question() {
               sx={{
                 "& .MuiTypography-root": {
                   fontFamily: "Montserrat",
-                  fontWeight: "700",
+                  fontWeight: "600",
                   fontSize: "24px",
                   color: "#193F53",
                 },
