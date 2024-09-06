@@ -30,6 +30,11 @@
     font-weight: 700;
   }
   @font-face {
+    font-family: beautique;
+    src: url("/fonts/beautique_display/BeautiqueDisplay-Black.otf");
+    font-weight: 900;
+  }
+  @font-face {
     font-family: bt-beau-san;
     src: url("/fonts/BT-Beau-Sans/BT-BeauSans-Bold.ttf");
     font-weight: 700;

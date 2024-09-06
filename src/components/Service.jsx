@@ -1,7 +1,7 @@
 export default function Service() {
   return (
     <>
-      <div className="mx-auto mt-40 h-[4px] w-[1010px] bg-[#193F53]"></div>
+      <div className="mx-auto my-20 h-[4px] w-[1010px] bg-[#193F53]"></div>
       <div
         id="services"
         className="mt-8 flex snap-start scroll-mt-28 flex-col items-center"

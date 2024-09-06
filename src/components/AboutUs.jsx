@@ -79,22 +79,22 @@ export default function AboutUs() {
       </div>
       <div className="ml-[65px] mt-20 flex items-center justify-center">
         <div>
-          <p className="mb-10 border-l-2 border-[#193F53] pl-2 pt-1 font-beautique text-3xl leading-none text-[#193F53]">
+          <img src="room-1.png" />
+          <p className="mt-4 border-l-2 border-[#193F53] pl-2 pt-1 font-beautique text-3xl font-bold leading-none text-[#193F53]">
             Tinh tế
           </p>
-          <img src="room-1.png" />
         </div>
-        <div className="relative left-[-20px] top-24">
-          <p className="mb-10 ml-5 border-l-2 border-[#193F53] pl-2 font-beautique text-3xl text-[#193F53]">
+        <div className="relative left-[-20px] top-24 z-10">
+          <img src="room-2.png" />
+          <p className="ml-3 mt-4 border-l-2 border-[#193F53] pl-2 font-beautique text-3xl font-bold text-[#193F53]">
             Tận tâm
           </p>
-          <img src="room-2.png" />
         </div>
         <div className="relative left-[-45px]">
-          <p className="mb-10 border-l-2 border-[#193F53] pl-2 font-beautique text-3xl text-[#193F53]">
+          <img src="room-3.png" />
+          <p className="ml-7 mt-4 border-l-2 border-[#193F53] pl-2 font-beautique text-3xl font-bold text-[#193F53]">
             Tỉ mỉ
           </p>
-          <img src="room-3.png" />
         </div>
       </div>
       <Project />
