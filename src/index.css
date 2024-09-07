@@ -146,3 +146,14 @@ html {
   background-color: black !important;
   padding: 15px !important;
 }
+
+@media only screen and (max-width: 1340px) {
+  html,
+  body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+}
