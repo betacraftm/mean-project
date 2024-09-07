@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import {
   FormControl,
   InputLabel,
@@ -10,7 +11,7 @@ import KeyboardArrowDownOutlinedIcon from "@mui/icons-material/KeyboardArrowDown
 import toast, { Toaster } from "react-hot-toast";
 import axios from "axios";
 
-export default function Contact() {
+export default function Contact({ contactRef }) {
   const [formData, setFormData] = useState({
     fullName: "",
     phoneNumber: "",
@@ -81,6 +82,7 @@ export default function Contact() {
 
   return (
     <div
+      ref={contactRef}
       id="contact"
       className="flex min-h-screen snap-start items-center justify-center bg-[url('/contact.png')] bg-cover bg-no-repeat"
     >

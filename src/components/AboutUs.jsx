@@ -1,11 +1,13 @@
+/* eslint-disable react/prop-types */
 import Service from "./Service";
 import Project from "./Project";
 
-export default function AboutUs() {
+export default function AboutUs({ aboutUsRef, projectsRef, servicesRef }) {
   return (
     <div
       id="about-us"
       className="mx-auto min-h-screen max-w-7xl snap-start pb-24 pt-5"
+      ref={aboutUsRef}
     >
       <div className="flex gap-32">
         <div className="w-3/5">
@@ -97,8 +99,8 @@ export default function AboutUs() {
           </p>
         </div>
       </div>
-      <Project />
-      <Service />
+      <Project projectsRef={projectsRef} />
+      <Service servicesRef={servicesRef} />
     </div>
   );
 }

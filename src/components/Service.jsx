@@ -1,9 +1,11 @@
-export default function Service() {
+/* eslint-disable react/prop-types */
+export default function Service({ servicesRef }) {
   return (
     <>
       <div className="mx-auto my-20 h-[4px] w-[1010px] bg-[#193F53]"></div>
       <div
         id="services"
+        ref={servicesRef}
         className="mt-8 flex snap-start scroll-mt-28 flex-col items-center"
       >
         <h3 className="w-[706px] text-center font-beautique text-5xl italic leading-[70px] text-[#193F53]">

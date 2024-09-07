@@ -1,6 +1,7 @@
+/* eslint-disable react/prop-types */
 import ArrowCircleUpIcon from "@mui/icons-material/ArrowCircleUp";
 
-export default function Footer() {
+export default function Footer({ contactRef }) {
   return (
     <>
       <footer className="mx-auto flex max-w-7xl justify-between border-b border-black py-16 font-btbeau">
@@ -40,10 +41,11 @@ export default function Footer() {
           <h4 className="w-[360px] text-xl font-bold text-[#193F53]">
             Hãy để lại thông tin để cùng nhau tạo nên không gian sống !
           </h4>
-          <span className="absolute right-[-4px] top-7">
-            <a href="#contact">
-              <ArrowCircleUpIcon sx={{ height: "24px", width: "24px" }} />
-            </a>
+          <span
+            className="absolute right-[-4px] top-7 cursor-pointer"
+            onClick={() => contactRef.current?.scrollIntoView()}
+          >
+            <ArrowCircleUpIcon sx={{ height: "24px", width: "24px" }} />
           </span>
         </div>
       </footer>

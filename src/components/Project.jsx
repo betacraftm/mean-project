@@ -1,6 +1,11 @@
-export default function Project() {
+/* eslint-disable react/prop-types */
+export default function Project({ projectsRef }) {
   return (
-    <div id="projects" className="mt-36 snap-start scroll-mt-10">
+    <div
+      id="projects"
+      className="mt-36 snap-start scroll-mt-10"
+      ref={projectsRef}
+    >
       <h2 className="font-beautique text-[56px] font-medium text-[#193F53]">
         Dự án
       </h2>

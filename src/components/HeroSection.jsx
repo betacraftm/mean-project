@@ -1,33 +1,39 @@
-export default function HeroSection() {
+/* eslint-disable react/prop-types */
+export default function HeroSection({
+  aboutUsRef,
+  projectsRef,
+  servicesRef,
+  contactRef,
+}) {
   return (
     <div className="bg-[url('/hero-image.png')] bg-cover bg-no-repeat">
       <div className="mx-auto flex min-h-screen max-w-7xl flex-col justify-between py-7">
         <nav className="flex w-full justify-between">
           <img src="logo.svg" alt="Mean Agency" className="h-16 w-16" />
           <ul className="flex gap-8 self-center">
-            <li className="text-white">
-              <a
-                href="#about-us"
-                className="font-montserrat text-2xl font-normal hover:underline hover:underline-offset-8"
-              >
+            <li
+              className="cursor-pointer text-white"
+              onClick={() => aboutUsRef.current?.scrollIntoView()}
+            >
+              <span className="font-montserrat text-2xl font-normal hover:underline hover:underline-offset-8">
                 Về chúng tôi
-              </a>
+              </span>
             </li>
-            <li className="text-white">
-              <a
-                href="#projects"
-                className="font-montserrat text-2xl font-normal hover:underline hover:underline-offset-8"
-              >
+            <li
+              className="cursor-pointer text-white"
+              onClick={() => projectsRef.current?.scrollIntoView()}
+            >
+              <span className="font-montserrat text-2xl font-normal hover:underline hover:underline-offset-8">
                 Dự án
-              </a>
+              </span>
             </li>
-            <li className="text-white">
-              <a
-                href="#services"
-                className="font-montserrat text-2xl font-normal hover:underline hover:underline-offset-8"
-              >
+            <li
+              className="cursor-pointer text-white"
+              onClick={() => servicesRef.current?.scrollIntoView()}
+            >
+              <span className="font-montserrat text-2xl font-normal hover:underline hover:underline-offset-8">
                 Dịch vụ
-              </a>
+              </span>
             </li>
           </ul>
           <img
@@ -58,8 +64,11 @@ export default function HeroSection() {
           <p className="font-montserrat text-4xl text-white">
             Interior creative agency
           </p>
-          <button className="mt-14 border-[3px] border-white px-6 py-4 font-montserrat font-bold text-white transition hover:bg-white hover:text-black">
-            <a href="#contact">ĐẶT LỊCH NGAY</a>
+          <button
+            onClick={() => contactRef.current?.scrollIntoView()}
+            className="mt-14 border-[3px] border-white px-6 py-4 font-montserrat font-bold text-white transition hover:bg-white hover:text-black"
+          >
+            <span>ĐẶT LỊCH NGAY</span>
           </button>
         </div>
 
