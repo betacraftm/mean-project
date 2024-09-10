@@ -62,19 +62,6 @@ html {
   font-family: beautique;
 }
 
-#about_us_p::after {
-  content: '"';
-  display: inline-block;
-  font-size: 128px;
-  font-family: beautique;
-  transform: scaleX(-1);
-  line-height: 128px;
-  color: #193f53b2;
-  position: absolute;
-  bottom: -110px;
-  margin-left: 0.7rem;
-}
-
 #number-01::after {
   content: "+";
   display: inline-block;
@@ -115,32 +102,30 @@ html {
   bottom: 83px;
 }
 
-#about-us-slogan::before {
+/* #about-us-slogan::before {
   content: '"';
   display: inline-block;
-  font-size: 128px;
+  font-size: 64px;
   rotate: 180deg;
   transform: scaleX(-1);
   color: #193f53b2;
   font-family: beautique;
   font-style: normal;
-  position: absolute;
-  left: 0px;
-  top: -75px;
-}
+  position: relative;
+  top: -20px;
+} */
 
-#about-us-slogan::after {
+/* #about-us-slogan::after {
   content: '"';
   display: inline-block;
-  font-size: 128px;
+  font-size: 64px;
   font-family: beautique;
   transform: scaleX(-1);
   color: #193f53b2;
-  position: absolute;
+  position: relative;
   font-style: normal;
-  bottom: -60px;
-  margin-left: 10px;
-}
+  bottom: -45px;
+} */
 
 .MuiList-root {
   background-color: black !important;
@@ -155,5 +140,440 @@ html {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
+  }
+}
+
+@media only screen and (min-width: 375px) {
+  #about_us_h2::before {
+    content: '"';
+    display: inline-block;
+    font-size: 64px;
+    rotate: 180deg;
+    transform: scaleX(-1);
+    height: 50px;
+    line-height: 80px;
+    padding-right: 0.1rem;
+    color: #193f53b2;
+    font-family: beautique;
+  }
+
+  #number-01::after {
+    content: "+";
+    display: inline-block;
+    font-family: beautique;
+    position: absolute;
+    top: -15px;
+    font-size: 40px;
+  }
+
+  #number-01::before {
+    content: "dự án";
+    display: inline-block;
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    position: absolute;
+    right: 28px;
+    bottom: 158px;
+  }
+
+  #number-02::before {
+    content: "khách hàng";
+    display: inline-block;
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    position: absolute;
+    right: 8px;
+    bottom: 27px;
+    width: 48px;
+    line-height: 17px;
+  }
+
+  #number-02::after {
+    content: ">";
+    display: inline-block;
+    font-family: beautique;
+    position: absolute;
+    left: 0px;
+    top: 133px;
+    font-size: 32px;
+  }
+
+  #about-us-slogan::before {
+    content: '"';
+    display: inline-block;
+    font-size: 64px;
+    rotate: 180deg;
+    transform: scaleX(-1);
+    color: #193f53b2;
+    font-family: beautique;
+    font-style: normal;
+    position: relative;
+    top: -20px;
+  }
+
+  #about-us-slogan::after {
+    content: '"';
+    display: inline-block;
+    font-size: 64px;
+    font-family: beautique;
+    transform: scaleX(-1);
+    color: #193f53b2;
+    position: relative;
+    font-style: normal;
+    bottom: -45px;
+  }
+}
+
+@media only screen and (min-width: 425px) {
+  #number-02::after {
+    content: ">";
+    display: inline-block;
+    font-family: beautique;
+    position: absolute;
+    right: 105px;
+    top: 133px;
+    font-size: 32px;
+  }
+
+  #number-02::before {
+    content: "khách hàng";
+    display: inline-block;
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    position: absolute;
+    right: 18px;
+    bottom: 27px;
+    width: 48px;
+    line-height: 17px;
+  }
+}
+
+@media only screen and (min-width: 500px) {
+  #number-01::before {
+    content: "dự án";
+    display: inline-block;
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    position: absolute;
+    right: 50px;
+    bottom: 125px;
+  }
+
+  #number-02::before {
+    content: "khách hàng";
+    display: inline-block;
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    position: absolute;
+    right: 33px;
+    bottom: 13px;
+    width: 48px;
+    line-height: 17px;
+  }
+
+  #number-02::after {
+    content: ">";
+    display: inline-block;
+    font-family: beautique;
+    position: absolute;
+    right: 120px;
+    top: 115px;
+    font-size: 32px;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  #number-01::before {
+    content: "dự án";
+    display: inline-block;
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    position: absolute;
+    right: 45px;
+    bottom: 157px;
+  }
+
+  #number-02::before {
+    content: "khách hàng";
+    display: inline-block;
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    position: absolute;
+    right: 40px;
+    bottom: 27px;
+    width: 48px;
+    line-height: 17px;
+  }
+
+  #number-02::after {
+    content: ">";
+    display: inline-block;
+    font-family: beautique;
+    position: absolute;
+    right: 135px;
+    top: 140px;
+    font-size: 36px;
+  }
+}
+
+@media only screen and (min-width: 700px) {
+  #number-01::before {
+    content: "dự án";
+    display: inline-block;
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    position: absolute;
+    right: 77px;
+    bottom: 135px;
+  }
+
+  #number-02::before {
+    content: "khách hàng";
+    display: inline-block;
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    position: absolute;
+    right: 75px;
+    bottom: 27px;
+    width: 48px;
+    line-height: 17px;
+  }
+
+  #number-02::after {
+    content: ">";
+    display: inline-block;
+    font-family: beautique;
+    position: absolute;
+    right: 167px;
+    top: 120px;
+    font-size: 36px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  #number-01::before {
+    content: "dự án";
+    display: inline-block;
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    position: absolute;
+    right: 30px;
+    bottom: 185px;
+  }
+
+  #number-02::before {
+    content: "khách hàng";
+    display: inline-block;
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    position: absolute;
+    right: -6px;
+    bottom: 67px;
+    width: 90px;
+    line-height: 17px;
+  }
+
+  #number-02::after {
+    content: "+";
+    display: inline-block;
+    font-family: beautique;
+    position: absolute;
+    top: 115px;
+    font-size: 40px;
+    font-weight: 400;
+    left: 43px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  #number-01::before {
+    content: "dự án";
+    display: inline-block;
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    position: absolute;
+    right: 40px;
+    bottom: 215px;
+  }
+
+  #number-02::before {
+    content: "khách hàng";
+    display: inline-block;
+    font-family: "Montserrat", sans-serif;
+    font-size: 17px;
+    font-weight: 300;
+    position: absolute;
+    right: -5px;
+    bottom: 75px;
+    width: 110px;
+    line-height: 17px;
+  }
+
+  #number-02::after {
+    content: "+";
+    display: inline-block;
+    font-family: beautique;
+    position: absolute;
+    top: 120px;
+    font-size: 40px;
+    font-weight: 400;
+    left: 55px;
+  }
+
+  #about_us_h2::before {
+    content: '"';
+    display: inline-block;
+    font-size: 100px;
+    rotate: 180deg;
+    transform: scaleX(-1);
+    height: 70px;
+    line-height: 120px;
+    padding-right: 0.5rem;
+    color: #193f53b2;
+    font-family: beautique;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  #number-01::before {
+    content: "dự án";
+    display: inline-block;
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    position: absolute;
+    right: 100px;
+    bottom: 215px;
+  }
+
+  #number-02::before {
+    content: "khách hàng";
+    display: inline-block;
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    position: absolute;
+    right: 55px;
+    bottom: 55px;
+    width: 110px;
+    line-height: 17px;
+  }
+
+  #number-02::after {
+    content: "+";
+    display: inline-block;
+    font-family: beautique;
+    position: absolute;
+    top: 140px;
+    font-size: 40px;
+    font-weight: 400;
+    left: 57px;
+  }
+
+  #about_us_h2::before {
+    content: '"';
+    display: inline-block;
+    font-size: 100px;
+    rotate: 180deg;
+    transform: scaleX(-1);
+    height: 70px;
+    line-height: 120px;
+    padding-right: 0.5rem;
+    color: #193f53b2;
+    font-family: beautique;
+  }
+
+  #about-us-slogan::before {
+    content: '"';
+    display: inline-block;
+    font-size: 128px;
+    rotate: 180deg;
+    transform: scaleX(-1);
+    color: #193f53b2;
+    font-family: beautique;
+    font-style: normal;
+    position: relative;
+    top: -50px;
+  }
+
+  #about-us-slogan::after {
+    content: '"';
+    display: inline-block;
+    font-size: 128px;
+    font-family: beautique;
+    transform: scaleX(-1);
+    color: #193f53b2;
+    position: relative;
+    font-style: normal;
+    bottom: -100px;
+  }
+}
+
+@media only screen and (min-width: 1536px) {
+  #about_us_h2::before {
+    content: '"';
+    display: inline-block;
+    font-size: 128px;
+    rotate: 180deg;
+    transform: scaleX(-1);
+    height: 50px;
+    line-height: 120px;
+    padding-right: 0.5rem;
+    color: #193f53b2;
+    font-family: beautique;
+  }
+
+  #number-01::after {
+    content: "+";
+    display: inline-block;
+    font-family: beautique;
+    position: absolute;
+    top: -45px;
+    font-size: 80px;
+  }
+
+  #number-01::before {
+    content: "dự án";
+    display: inline-block;
+    font-family: "Montserrat", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    position: absolute;
+    right: 75px;
+    bottom: 253px;
+  }
+
+  #number-02::after {
+    content: "+";
+    display: inline-block;
+    font-family: beautique;
+    position: absolute;
+    top: 135px;
+    font-size: 80px;
+    left: 70px;
+  }
+
+  #number-02::before {
+    content: "khách hàng";
+    display: inline-block;
+    font-family: "Montserrat", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    position: absolute;
+    right: 10px;
+    bottom: 73px;
+    width: 160px;
   }
 }

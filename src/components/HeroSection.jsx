@@ -7,12 +7,12 @@ export default function HeroSection({
 }) {
   return (
     <div className="bg-[url('/hero-image.png')] bg-cover bg-center bg-no-repeat">
-      <div className="mx-auto flex min-h-screen flex-col justify-between px-3 py-7 md:max-w-2xl md:px-0 lg:max-w-4xl xl:max-w-7xl">
+      <div className="mx-auto flex min-h-screen flex-col justify-between px-3 py-7 md:max-w-2xl md:px-0 lg:max-w-4xl xl:max-w-6xl 2xl:max-w-7xl">
         <nav className="flex w-full justify-between">
           <img
             src="logo.svg"
             alt="Mean Agency"
-            className="h-12 w-12 lg:h-16 lg:w-16"
+            className="h-12 w-12 lg:h-24 lg:w-24"
           />
           <ul className="flex gap-8 self-center">
             <li
@@ -43,23 +43,23 @@ export default function HeroSection({
           <img
             src="logo.svg"
             alt="Mean Agency"
-            className="invisible hidden h-12 w-12 sm:inline lg:h-16 lg:w-16"
+            className="invisible hidden h-12 w-12 sm:inline lg:h-24 lg:w-24"
           />
         </nav>
 
-        <div className="relative flex flex-col items-center justify-center">
+        <div className="relative flex flex-col items-center justify-center xl:mt-5">
           <img
             src="vector-1.png"
-            className="absolute hidden object-cover md:right-20 md:top-[-25px] md:inline-block md:h-7 lg:right-9 lg:h-11 xl:right-[165px] xl:top-[-40px] xl:h-fit"
+            className="absolute hidden object-cover md:right-20 md:top-[-25px] md:inline-block md:h-7 lg:right-9 lg:h-11 xl:right-[100px] xl:top-[-40px] xl:h-fit 2xl:right-[160px] 2xl:top-[-40px] 2xl:h-fit"
           />
-          <p className="absolute hidden font-montserrat text-white md:right-20 md:top-[-45px] md:inline-block md:text-xs lg:right-10 lg:top-[-60px] lg:text-xl xl:right-[165px] xl:top-[-80px] xl:text-2xl">
+          <p className="absolute hidden font-montserrat text-white md:right-20 md:top-[-45px] md:inline-block md:text-xs lg:right-10 lg:top-[-60px] lg:text-xl xl:right-[100px] xl:top-[-80px] xl:text-2xl 2xl:right-[160px] 2xl:top-[-80px] 2xl:text-2xl">
             Không gian sáng tạo
           </p>
           <img
             src="vector-2.png"
-            className="absolute hidden md:bottom-[120px] md:left-14 md:inline-block md:h-7 lg:left-0 lg:h-11 xl:bottom-[120px] xl:left-[150px] xl:h-fit"
+            className="absolute hidden md:bottom-[120px] md:left-14 md:inline-block md:h-7 lg:left-0 lg:h-11 xl:bottom-[120px] xl:left-[90px] xl:h-fit 2xl:bottom-[120px] 2xl:left-[120px] 2xl:h-fit"
           />
-          <p className="absolute hidden font-montserrat text-white md:left-14 md:inline-block md:text-xs lg:bottom-[85px] lg:left-1 lg:text-xl xl:bottom-[80px] xl:left-[150px] xl:text-2xl">
+          <p className="absolute hidden font-montserrat text-white md:left-14 md:inline-block md:text-xs lg:bottom-[85px] lg:left-1 lg:text-xl xl:bottom-[80px] xl:left-[95px] xl:text-2xl 2xl:bottom-[80px] 2xl:left-[120px] 2xl:text-2xl">
             Ý nghĩa thiết kế
           </p>
           <h1 className="font-beautique text-5xl leading-normal text-white sm:text-6xl md:text-7xl lg:text-9xl 2xl:text-[148px] 2xl:leading-[140px]">
