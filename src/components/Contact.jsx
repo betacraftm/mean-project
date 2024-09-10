@@ -5,7 +5,9 @@ import {
   MenuItem,
   Select,
   TextField,
+  CssBaseline,
 } from "@mui/material";
+import { ThemeProvider, createTheme } from "@mui/material";
 import { useState } from "react";
 import KeyboardArrowDownOutlinedIcon from "@mui/icons-material/KeyboardArrowDownOutlined";
 import toast, { Toaster } from "react-hot-toast";
@@ -80,70 +82,179 @@ export default function Contact({ contactRef }) {
     }
   };
 
+  const theme = createTheme({
+    breakpoints: {
+      values: {
+        xs: 0,
+        sm: 640,
+        md: 768,
+        lg: 1024,
+        xl: 1280,
+        xxl: 1536,
+      },
+    },
+  });
+
   return (
-    <div
-      ref={contactRef}
-      id="contact"
-      className="flex min-h-screen snap-start items-center justify-center bg-[url('/contact.png')] bg-cover bg-no-repeat"
-    >
-      <div>
-        <Toaster
-          position="bottom-center"
-          toastOptions={{
-            style: {
-              fontSize: "24px",
-              fontFamily: "Montserrat",
-              maxWidth: "fit-content",
-              padding: "15px",
-            },
-          }}
-        />
-      </div>
-      <div className="flex max-w-7xl justify-center py-6">
-        <div className="w-1/2">
-          <h2 className="font-beautique text-5xl font-medium italic leading-[70px] text-white">
-            Hãy cùng nhau tạo nên điều gì đó tuyệt vời !
-          </h2>
+    <ThemeProvider theme={theme}>
+      <CssBaseline />
+      <div
+        ref={contactRef}
+        id="contact"
+        className="flex min-h-screen snap-start items-center justify-center bg-[url('/contact.png')] bg-cover bg-center bg-no-repeat"
+      >
+        <div>
+          <Toaster
+            position="bottom-center"
+            toastOptions={{
+              style: {
+                fontSize: "24px",
+                fontFamily: "Montserrat",
+                maxWidth: "fit-content",
+                padding: "15px",
+              },
+            }}
+          />
         </div>
-        <div className="w-1/2">
-          <p className="mb-11 font-btbeau text-4xl font-bold text-white">
-            Để lại thông tin của bạn ở đây nhé!
-          </p>
-          <form id="customer-form" autoComplete="off">
-            <FormControl fullWidth>
-              <TextField
-                required
-                fullWidth
-                variant="standard"
-                label="Họ và Tên"
-                value={formData?.fullName}
-                onChange={(e) =>
-                  setFormData({ ...formData, fullName: e.target.value })
-                }
-                type="text"
-                sx={{
-                  marginBottom: "30px",
-                  input: {
-                    color: "white",
-                    fontFamily: "Montserrat",
-                    fontSize: "20px",
-                    paddingTop: "15px",
-                    paddingBottom: "10px",
-                    fontWeight: "300",
-                  },
-                  "& .MuiInputLabel-standard": {
-                    color: "white",
-                    fontSize: "20px",
-                    fontWeight: "400",
-                    fontFamily: "Montserrat",
-                    "&.Mui-focused": {
+        <div className="flex max-w-sm flex-col justify-center px-3 py-6 sm:max-w-xl sm:flex-row sm:gap-4 md:max-w-2xl md:gap-6 lg:max-w-4xl xl:max-w-6xl xl:px-0 2xl:max-w-7xl">
+          <div className="sm:w-1/2">
+            <h2 className="mb-8 font-beautique text-2xl font-medium italic leading-10 text-white sm:mb-0 lg:text-3xl xl:text-5xl xl:leading-[70px]">
+              Hiện thực hóa không gian gian mơ ước của bạn !
+            </h2>
+          </div>
+          <div className="mt-2 sm:w-1/2">
+            <p className="mb-4 font-btbeau font-bold text-white sm:text-lg lg:text-2xl xl:mb-11 xl:text-4xl">
+              Để lại thông tin của bạn ở đây nhé!
+            </p>
+            <form id="customer-form" autoComplete="off">
+              <FormControl fullWidth>
+                <TextField
+                  required
+                  fullWidth
+                  variant="standard"
+                  label="Họ và Tên"
+                  value={formData?.fullName}
+                  onChange={(e) =>
+                    setFormData({ ...formData, fullName: e.target.value })
+                  }
+                  type="text"
+                  sx={{
+                    marginBottom: { xs: "18px", sm: "30px" },
+                    input: {
                       color: "white",
+                      fontFamily: "Montserrat",
+                      fontSize: {
+                        xs: "14px",
+                        sm: "14px",
+                        md: "16px",
+                        lg: "20px",
+                      },
+                      paddingTop: { xs: "5px", sm: "10px" },
+                      paddingBottom: { xs: "10px", sm: "10px" },
+                      fontWeight: "300",
                     },
-                    "& .MuiFormLabel-asterisk": {
-                      display: "none",
+                    "& .MuiInputLabel-standard": {
+                      color: "white",
+                      fontSize: {
+                        xs: "14px",
+                        sm: "14px",
+                        md: "16px",
+                        lg: "20px",
+                      },
+                      fontWeight: "400",
+                      fontFamily: "Montserrat",
+                      "&.Mui-focused": {
+                        color: "white",
+                      },
+                      "& .MuiFormLabel-asterisk": {
+                        display: "none",
+                      },
                     },
-                  },
-                  "& .MuiInput-root": {
+                    "& .MuiInput-root": {
+                      ":hover:not(.Mui-focused)": {
+                        "&:before": {
+                          borderColor: "white",
+                        },
+                      },
+                      "&:before": {
+                        borderColor: "white",
+                      },
+                      "&:after": {
+                        transition: "none",
+                        borderColor: "white",
+                      },
+                    },
+                  }}
+                />
+              </FormControl>
+
+              <FormControl fullWidth>
+                <TextField
+                  required
+                  fullWidth
+                  variant="standard"
+                  label="Số điện thoại"
+                  type="text"
+                  value={formData?.phoneNumber}
+                  onChange={(e) =>
+                    setFormData({ ...formData, phoneNumber: e.target.value })
+                  }
+                  sx={{
+                    marginBottom: { xs: "18px", sm: "30px" },
+                    input: {
+                      color: "white",
+                      fontFamily: "Montserrat",
+                      fontSize: {
+                        xs: "14px",
+                        sm: "14px",
+                        md: "16px",
+                        lg: "20px",
+                      },
+                      paddingTop: { xs: "5px", sm: "10px" },
+                      paddingBottom: { xs: "10px", sm: "10px" },
+                      fontWeight: "300",
+                    },
+                    "& .MuiInputLabel-standard": {
+                      color: "white",
+                      fontSize: {
+                        xs: "14px",
+                        sm: "14px",
+                        md: "16px",
+                        lg: "20px",
+                      },
+                      fontWeight: "400",
+                      fontFamily: "Montserrat",
+                      "&.Mui-focused": {
+                        color: "white",
+                      },
+                      "& .MuiFormLabel-asterisk": {
+                        display: "none",
+                      },
+                    },
+                    "& .MuiInput-root": {
+                      ":hover:not(.Mui-focused)": {
+                        "&:before": {
+                          borderColor: "white",
+                        },
+                      },
+                      "&:before": {
+                        borderColor: "white",
+                      },
+                      "&:after": {
+                        transition: "none",
+                        borderColor: "white",
+                      },
+                    },
+                  }}
+                />
+              </FormControl>
+
+              <FormControl
+                required
+                variant="standard"
+                fullWidth
+                sx={{
+                  "& .MuiInputBase-root": {
                     ":hover:not(.Mui-focused)": {
                       "&:before": {
                         borderColor: "white",
@@ -156,249 +267,223 @@ export default function Contact({ contactRef }) {
                       transition: "none",
                       borderColor: "white",
                     },
-                  },
-                }}
-              />
-            </FormControl>
-            <FormControl fullWidth>
-              <TextField
-                required
-                fullWidth
-                variant="standard"
-                label="Số điện thoại"
-                type="text"
-                value={formData?.phoneNumber}
-                onChange={(e) =>
-                  setFormData({ ...formData, phoneNumber: e.target.value })
-                }
-                sx={{
-                  marginBottom: "30px",
-                  input: {
-                    color: "white",
-                    fontFamily: "Montserrat",
-                    fontSize: "20px",
-                    paddingTop: "15px",
-                    paddingBottom: "10px",
-                    fontWeight: "300",
-                  },
-                  "& .MuiInputLabel-standard": {
-                    color: "white",
-                    fontSize: "20px",
-                    fontWeight: "400",
-                    fontFamily: "Montserrat",
-                    "&.Mui-focused": {
-                      color: "white",
+                    "& .MuiSvgIcon-root": {
+                      height: {
+                        xs: "24px",
+                        lg: "32px",
+                      },
+                      width: {
+                        xs: "24px",
+                        lg: "32px",
+                      },
                     },
+                    "& .MuiSelect-select": {
+                      paddingTop: {
+                        xs: "4px",
+                        sm: "15px",
+                      },
+                      paddingBottom: {
+                        xs: "7px",
+                        sm: "7px",
+                        md: "10px",
+                      },
+                      fontSize: {
+                        xs: "14px",
+                        sm: "14px",
+                        md: "16px",
+                        lg: "20px",
+                      },
+                    },
+                  },
+                  "& .MuiFormLabel-root": {
                     "& .MuiFormLabel-asterisk": {
                       display: "none",
                     },
-                  },
-                  "& .MuiInput-root": {
-                    ":hover:not(.Mui-focused)": {
-                      "&:before": {
-                        borderColor: "white",
-                      },
-                    },
-                    "&:before": {
-                      borderColor: "white",
-                    },
-                    "&:after": {
-                      transition: "none",
-                      borderColor: "white",
+                    fontSize: {
+                      xs: "14px",
+                      sm: "14px",
+                      md: "16px",
+                      lg: "20px",
                     },
                   },
-                }}
-              />
-            </FormControl>
-            <FormControl
-              required
-              variant="standard"
-              fullWidth
-              sx={{
-                "& .MuiInputBase-root": {
-                  ":hover:not(.Mui-focused)": {
-                    "&:before": {
-                      borderColor: "white",
-                    },
-                  },
-                  "&:before": {
-                    borderColor: "white",
-                  },
-                  "&:after": {
-                    transition: "none",
-                    borderColor: "white",
-                  },
-                },
-                "& .MuiFormLabel-root": {
-                  "& .MuiFormLabel-asterisk": {
-                    display: "none",
-                  },
-                },
-                marginBottom: "30px",
-              }}
-            >
-              <InputLabel
-                sx={{
-                  color: "white",
-                  fontFamily: "Montserrat",
-                  fontSize: "20px",
-                  "&.Mui-focused": {
-                    color: "white",
-                  },
-                }}
-                id="service-list"
-              >
-                Chọn hạng mục muốn thi công
-              </InputLabel>
-              <Select
-                IconComponent={KeyboardArrowDownOutlinedIcon}
-                labelId="service-list"
-                value={formData?.service}
-                onChange={(e) =>
-                  setFormData({ ...formData, service: e.target.value })
-                }
-                label="Service"
-                defaultValue={""}
-                sx={{
-                  "& .MuiSvgIcon-root": {
-                    color: "white",
-                    top: "5px",
-                    height: "32px",
-                    width: "32px",
-                  },
-                  "& .MuiSelect-select": {
-                    fontFamily: "Montserrat",
-                    fontSize: "20px",
-                    color: "white",
-                    paddingTop: "15px",
-                    paddingBottom: "10px",
-                    fontWeight: "300",
-                  },
+                  marginBottom: { xs: "18px", sm: "30px" },
                 }}
               >
-                <MenuItem
+                <InputLabel
                   sx={{
-                    "&.MuiButtonBase-root": {
-                      fontSize: "20px",
-                      fontFamily: "Montserrat",
-                      color: "white",
-                      padding: "20px 8px",
-                      borderRadius: "2px",
-                      transition: "all 150ms",
-                      "&:hover": {
-                        backgroundColor: "white",
-                        color: "black",
-                      },
-                      borderBottom: "1px solid white",
-                    },
-                  }}
-                  value={"Nhà ở"}
-                >
-                  Nhà ở
-                </MenuItem>
-                <MenuItem
-                  sx={{
-                    "&.MuiButtonBase-root": {
-                      fontSize: "20px",
-                      fontFamily: "Montserrat",
-                      color: "white",
-                      padding: "20px 8px",
-                      borderRadius: "2px",
-                      transition: "all 150ms",
-                      "&:hover": {
-                        backgroundColor: "white",
-                        color: "black",
-                      },
-                      borderBottom: "1px solid white",
-                    },
-                  }}
-                  value={"Dịch vụ"}
-                >
-                  Dịch vụ
-                </MenuItem>
-                <MenuItem
-                  sx={{
-                    "&.MuiButtonBase-root": {
-                      fontSize: "20px",
-                      fontFamily: "Montserrat",
-                      color: "white",
-                      padding: "20px 8px",
-                      borderRadius: "2px",
-                      transition: "all 150ms",
-                      "&:hover": {
-                        backgroundColor: "white",
-                        color: "black",
-                      },
-                    },
-                  }}
-                  value={"Thi công"}
-                >
-                  Thi công
-                </MenuItem>
-              </Select>
-            </FormControl>
-            <FormControl fullWidth>
-              <TextField
-                required
-                fullWidth
-                variant="standard"
-                label="Địa chỉ"
-                type="text"
-                value={formData?.address}
-                onChange={(e) =>
-                  setFormData({ ...formData, address: e.target.value })
-                }
-                sx={{
-                  marginBottom: "55px",
-                  input: {
                     color: "white",
                     fontFamily: "Montserrat",
                     fontSize: "20px",
-                    paddingTop: "15px",
-                    paddingBottom: "10px",
-                    fontWeight: "300",
-                  },
-                  "& .MuiInputLabel-standard": {
-                    color: "white",
-                    fontSize: "20px",
-                    fontWeight: "400",
-                    fontFamily: "Montserrat",
                     "&.Mui-focused": {
                       color: "white",
                     },
-                    "& .MuiFormLabel-asterisk": {
-                      display: "none",
+                  }}
+                  id="service-list"
+                >
+                  Chọn hạng mục muốn thi công
+                </InputLabel>
+                <Select
+                  IconComponent={KeyboardArrowDownOutlinedIcon}
+                  labelId="service-list"
+                  value={formData?.service}
+                  onChange={(e) =>
+                    setFormData({ ...formData, service: e.target.value })
+                  }
+                  label="Service"
+                  defaultValue={""}
+                  sx={{
+                    "& .MuiSvgIcon-root": {
+                      color: "white",
+                      top: "5px",
+                      height: "32px",
+                      width: "32px",
                     },
-                  },
-                  "& .MuiInput-root": {
-                    ":hover:not(.Mui-focused)": {
+                    "& .MuiSelect-select": {
+                      fontFamily: "Montserrat",
+                      fontSize: "20px",
+                      color: "white",
+                      paddingTop: "15px",
+                      paddingBottom: "10px",
+                      fontWeight: "300",
+                    },
+                  }}
+                >
+                  <MenuItem
+                    sx={{
+                      "&.MuiButtonBase-root": {
+                        fontSize: "20px",
+                        fontFamily: "Montserrat",
+                        color: "white",
+                        padding: "20px 8px",
+                        borderRadius: "2px",
+                        transition: "all 150ms",
+                        "&:hover": {
+                          backgroundColor: "white",
+                          color: "black",
+                        },
+                        borderBottom: "1px solid white",
+                      },
+                    }}
+                    value={"Nhà ở"}
+                  >
+                    Nhà ở
+                  </MenuItem>
+                  <MenuItem
+                    sx={{
+                      "&.MuiButtonBase-root": {
+                        fontSize: "20px",
+                        fontFamily: "Montserrat",
+                        color: "white",
+                        padding: "20px 8px",
+                        borderRadius: "2px",
+                        transition: "all 150ms",
+                        "&:hover": {
+                          backgroundColor: "white",
+                          color: "black",
+                        },
+                        borderBottom: "1px solid white",
+                      },
+                    }}
+                    value={"Dịch vụ"}
+                  >
+                    Dịch vụ
+                  </MenuItem>
+                  <MenuItem
+                    sx={{
+                      "&.MuiButtonBase-root": {
+                        fontSize: "20px",
+                        fontFamily: "Montserrat",
+                        color: "white",
+                        padding: "20px 8px",
+                        borderRadius: "2px",
+                        transition: "all 150ms",
+                        "&:hover": {
+                          backgroundColor: "white",
+                          color: "black",
+                        },
+                      },
+                    }}
+                    value={"Thi công"}
+                  >
+                    Thi công
+                  </MenuItem>
+                </Select>
+              </FormControl>
+
+              <FormControl fullWidth>
+                <TextField
+                  required
+                  fullWidth
+                  variant="standard"
+                  label="Địa chỉ"
+                  type="text"
+                  value={formData?.address}
+                  onChange={(e) =>
+                    setFormData({ ...formData, address: e.target.value })
+                  }
+                  sx={{
+                    marginBottom: "55px",
+                    input: {
+                      color: "white",
+                      fontFamily: "Montserrat",
+                      fontSize: {
+                        xs: "14px",
+                        sm: "14px",
+                        md: "16px",
+                        lg: "20px",
+                      },
+                      paddingTop: { xs: "5px", sm: "10px" },
+                      paddingBottom: { xs: "10px", sm: "10px" },
+                      fontWeight: "300",
+                    },
+                    "& .MuiInputLabel-standard": {
+                      color: "white",
+                      fontSize: {
+                        xs: "14px",
+                        sm: "14px",
+                        md: "16px",
+                        lg: "20px",
+                      },
+                      fontWeight: "400",
+                      fontFamily: "Montserrat",
+                      "&.Mui-focused": {
+                        color: "white",
+                      },
+                      "& .MuiFormLabel-asterisk": {
+                        display: "none",
+                      },
+                    },
+                    "& .MuiInput-root": {
+                      ":hover:not(.Mui-focused)": {
+                        "&:before": {
+                          borderColor: "white",
+                        },
+                      },
                       "&:before": {
                         borderColor: "white",
                       },
+                      "&:after": {
+                        transition: "none",
+                        borderColor: "white",
+                      },
                     },
-                    "&:before": {
-                      borderColor: "white",
-                    },
-                    "&:after": {
-                      transition: "none",
-                      borderColor: "white",
-                    },
-                  },
-                }}
-              />
-            </FormControl>
-            <div className="flex justify-end">
-              <button
-                type="submit"
-                onClick={handleSubmit}
-                className="border-[3px] border-white px-5 py-3 font-montserrat text-xl font-bold text-white transition hover:bg-white hover:text-black"
-              >
-                ĐẶT LỊCH NGAY
-              </button>
-            </div>
-          </form>
+                  }}
+                />
+              </FormControl>
+
+              <div className="flex justify-end">
+                <button
+                  type="submit"
+                  onClick={handleSubmit}
+                  className="border-[2px] border-white px-5 py-3 font-montserrat text-base font-bold text-white transition hover:bg-white hover:text-black sm:border-[3px] sm:text-xl"
+                >
+                  ĐẶT LỊCH NGAY
+                </button>
+              </div>
+            </form>
+          </div>
         </div>
       </div>
-    </div>
+    </ThemeProvider>
   );
 }
