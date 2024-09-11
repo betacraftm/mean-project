@@ -23,7 +23,7 @@ export default function Service({ servicesRef }) {
               Thiết kế <span className="font-bold">NHÀ Ở</span>
             </p>
           </div>
-          <div className="flex w-[95px] flex-col items-center justify-center border-l-2 border-r-2 border-[#193F53] min-[375px]:w-[120px] sm:w-[180px] md:w-[200px] lg:w-[270px] xl:w-[400px] xl:border-l-4 xl:border-r-4">
+          <div className="border-l-1 border-r-1 flex w-[95px] flex-col items-center justify-center border-[#193F53] min-[375px]:w-[120px] sm:w-[180px] md:w-[200px] lg:w-[270px] xl:w-[400px] xl:border-l-4 xl:border-r-4">
             <img
               src="deck.png"
               className="h-12 w-12 sm:h-20 sm:w-20 md:h-24 md:w-24 lg:h-32 lg:w-32 xl:h-fit xl:w-fit xl:pb-[26px]"
