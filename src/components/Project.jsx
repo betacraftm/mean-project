@@ -63,7 +63,7 @@ export default function Project({ projectsRef }) {
           </div>
 
           <div className="relative flex justify-between">
-            <div className="w-1/3 text-xs">
+            <div className="mr-3 w-2/5 text-[9px] min-[375px]:mr-0 min-[375px]:w-1/3 min-[375px]:text-xs">
               <p className="font-montserrat">
                 <span className="font-bold">Vị trí:</span> Sao Đỏ - Hải Dương
               </p>
@@ -73,7 +73,7 @@ export default function Project({ projectsRef }) {
                 độ nhất quán cho không gian, nhưng không làm giảm đi tính độc
                 đáo.
               </p>
-              <h3 className="absolute bottom-1 w-[120px] border-l border-[#193F53] pl-3 pt-1 font-beautique text-[15px] font-medium italic text-[#193F53]">
+              <h3 className="absolute bottom-1 w-24 border-l border-[#193F53] pl-3 pt-1 font-beautique text-xs font-medium italic text-[#193F53] min-[375px]:w-[120px] min-[375px]:text-[15px]">
                 Phòng khách & phòng bếp
               </h3>
             </div>
@@ -131,29 +131,29 @@ export default function Project({ projectsRef }) {
           <div className="mt-1 h-[1px] bg-[#193F53]"></div>
         </div>
 
-        <div className="relative mt-5 flex min-h-[130px]">
-          <div className="absolute left-0 w-[144px]">
+        <div className="relative mt-5 flex min-h-[115px] min-[375px]:min-h-[130px]">
+          <div className="absolute left-0 w-[130px] min-[375px]:w-[144px]">
             <img src="bedroom-01-mb.png" className="w-full object-cover" />
-            <h3 className="mt-2 border-l border-[#193F53] pl-1 pt-1 font-beautique text-[13px] font-medium italic leading-none text-[#193F53]">
+            <h3 className="mt-2 border-l border-[#193F53] pl-1 pt-1 font-beautique text-[10px] font-medium italic leading-none text-[#193F53] min-[375px]:text-[13px]">
               Phòng ngủ 1
             </h3>
           </div>
-          <div className="absolute left-1/2 top-0 z-10 w-[144px] translate-x-[-50%]">
-            <h3 className="mx-auto mb-2 max-w-fit border-l border-[#193F53] pl-1 pt-1 font-beautique text-[13px] font-medium italic leading-none text-[#193F53]">
+          <div className="absolute left-1/2 top-0 z-10 w-[130px] translate-x-[-50%] min-[375px]:w-[144px]">
+            <h3 className="mx-auto mb-2 max-w-fit border-l border-[#193F53] pl-1 pt-1 font-beautique text-[10px] font-medium italic leading-none text-[#193F53] min-[375px]:text-[13px]">
               Phòng ngủ 2
             </h3>
             <img src="bedroom-02-mb.png" className="w-full object-cover" />
           </div>
-          <div className="absolute right-0 w-[144px]">
+          <div className="absolute right-0 w-[130px] min-[375px]:w-[144px]">
             <img src="bedroom-03-mb.png" className="w-full object-cover" />
-            <h3 className="ml-auto mr-3 mt-2 max-w-fit border-l border-[#193F53] pl-1 pt-1 font-beautique text-[13px] font-medium italic leading-none text-[#193F53]">
+            <h3 className="ml-auto mr-3 mt-2 max-w-fit border-l border-[#193F53] pl-1 pt-1 font-beautique text-[10px] font-medium italic leading-none text-[#193F53] min-[375px]:text-[13px]">
               Phòng ngủ 3
             </h3>
           </div>
         </div>
       </div>
 
-      <div className="mx-auto my-6 h-[1px] w-[320px] bg-[#193F53] sm:my-20 sm:h-[2px] sm:w-3/4 2xl:w-[1010px]"></div>
+      <div className="mx-auto my-6 h-[1px] w-[280px] bg-[#193F53] min-[375px]:w-[320px] sm:my-20 sm:h-[2px] sm:w-3/4 2xl:w-[1010px]"></div>
 
       <div className="mx-auto mt-8 hidden justify-around gap-5 sm:flex sm:max-w-xl md:max-w-none">
         <div className="flex gap-4">
@@ -215,13 +215,13 @@ export default function Project({ projectsRef }) {
                 <img src="khach-3-mb.png" className="w-full object-cover" />
                 <img src="khach-4-mb.png" className="w-full object-cover" />
               </div>
-              <div className="flex flex-col gap-1">
+              <div className="flex flex-col gap-2 min-[375px]:gap-1">
                 <img src="bep-3-mb.png" className="w-full object-cover" />
                 <img src="bep-4-mb.png" className="w-full object-cover" />
               </div>
             </div>
 
-            <div className="w-1/3 text-xs">
+            <div className="ml-3 w-2/5 text-[9px] min-[375px]:ml-0 min-[375px]:w-1/3 min-[375px]:text-xs">
               <p className="font-montserrat">
                 <span className="font-bold">Vị trí:</span> Hạ Long - Quảng Ninh
               </p>
@@ -231,7 +231,7 @@ export default function Project({ projectsRef }) {
                 sử dụng chủ yếu là gỗ với màu sắc đậm và họa tiết vân rõ ràng,
                 tăng thêm sự sang trọng cho không gian
               </p>
-              <h3 className="absolute bottom-1 w-[120px] border-l border-[#193F53] pl-3 pt-1 font-beautique text-[15px] font-medium italic text-[#193F53]">
+              <h3 className="absolute bottom-1 w-24 border-l border-[#193F53] pl-3 pt-1 font-beautique text-xs font-medium italic text-[#193F53] min-[375px]:w-[120px] min-[375px]:text-[15px]">
                 Phòng khách & phòng bếp
               </h3>
             </div>
@@ -277,22 +277,22 @@ export default function Project({ projectsRef }) {
           <div className="mt-1 h-[1px] bg-[#193F53]"></div>
         </div>
 
-        <div className="relative mt-5 flex min-h-[130px]">
-          <div className="absolute left-0 w-[144px]">
+        <div className="relative mt-5 flex min-h-[115px] min-[375px]:min-h-[130px]">
+          <div className="absolute left-0 w-[130px] min-[375px]:w-[144px]">
             <img src="bedroom-4-mb.png" className="w-full object-cover" />
-            <h3 className="mt-2 border-l border-[#193F53] pl-1 pt-1 font-beautique text-[13px] font-medium italic leading-none text-[#193F53]">
+            <h3 className="mt-2 border-l border-[#193F53] pl-1 pt-1 font-beautique text-[10px] font-medium italic leading-none text-[#193F53] min-[375px]:text-[13px]">
               Phòng ngủ 1
             </h3>
           </div>
-          <div className="absolute left-1/2 top-0 z-10 w-[144px] translate-x-[-50%]">
-            <h3 className="mx-auto mb-2 max-w-fit border-l border-[#193F53] pl-1 pt-1 font-beautique text-[13px] font-medium italic leading-none text-[#193F53]">
+          <div className="absolute left-1/2 top-0 z-10 w-[130px] translate-x-[-50%] min-[375px]:w-[144px]">
+            <h3 className="mx-auto mb-2 max-w-fit border-l border-[#193F53] pl-1 pt-1 font-beautique text-[10px] font-medium italic leading-none text-[#193F53] min-[375px]:text-[13px]">
               Phòng ngủ 2
             </h3>
             <img src="bedroom-5-mb.png" className="w-full object-cover" />
           </div>
-          <div className="absolute right-0 w-[144px]">
+          <div className="absolute right-0 w-[130px] min-[375px]:w-[144px]">
             <img src="bedroom-6-mb.png" className="w-full object-cover" />
-            <h3 className="ml-auto mr-3 mt-2 max-w-fit border-l border-[#193F53] pl-1 pt-1 font-beautique text-[13px] font-medium italic leading-none text-[#193F53]">
+            <h3 className="ml-auto mr-3 mt-2 max-w-fit border-l border-[#193F53] pl-1 pt-1 font-beautique text-[10px] font-medium italic leading-none text-[#193F53] min-[375px]:text-[13px]">
               Phòng ngủ 3
             </h3>
           </div>

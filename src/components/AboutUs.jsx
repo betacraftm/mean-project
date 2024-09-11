@@ -130,22 +130,31 @@ export default function AboutUs({ aboutUsRef, projectsRef, servicesRef }) {
         </div>
       </div>
 
-      <div className="relative mx-auto mt-10 flex min-h-72 max-w-md md:hidden">
+      <div className="relative mx-auto mt-10 flex min-h-60 max-w-md min-[375px]:min-h-72 md:hidden">
         <div className="absolute left-0">
-          <img src="room-4.png" className="w-36 object-cover" />
+          <img
+            src="room-4.png"
+            className="w-32 object-cover min-[375px]:w-36"
+          />
           <p className="mt-2 border-l-2 border-[#193F53] pl-1 pt-1 font-beautique font-bold leading-none text-[#193F53] lg:mt-4 lg:pl-2 lg:text-3xl">
             Tinh tế
           </p>
         </div>
         <div className="absolute left-1/2 top-9 z-10 translate-x-[-50%]">
-          <img src="room-5.png" className="w-36 object-cover" />
+          <img
+            src="room-5.png"
+            className="w-32 object-cover min-[375px]:w-36"
+          />
           <p className="ml-3 mt-2 border-l-2 border-[#193F53] pl-1 font-beautique font-bold text-[#193F53] lg:mt-4 lg:pl-2 lg:text-3xl">
             Tận tâm
           </p>
         </div>
         <div className="absolute right-0">
-          <img src="room-6.png" className="w-36 object-cover" />
-          <p className="ml-11 mt-2 border-l-2 border-[#193F53] pl-1 font-beautique font-bold text-[#193F53] lg:mt-4 lg:pl-2 lg:text-3xl">
+          <img
+            src="room-6.png"
+            className="w-32 object-cover min-[375px]:w-36"
+          />
+          <p className="ml-12 mt-2 border-l-2 border-[#193F53] pl-1 font-beautique font-bold text-[#193F53] min-[375px]:ml-11 lg:mt-4 lg:pl-2 lg:text-3xl">
             Tỉ mỉ
           </p>
         </div>

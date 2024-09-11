@@ -19,7 +19,7 @@ export default function HeroSection({
               className="cursor-pointer text-white"
               onClick={() => aboutUsRef.current?.scrollIntoView()}
             >
-              <span className="font-montserrat text-sm font-normal hover:underline hover:underline-offset-8 lg:text-2xl">
+              <span className="font-montserrat text-xs font-normal hover:underline hover:underline-offset-8 min-[375px]:text-sm lg:text-2xl">
                 Về chúng tôi
               </span>
             </li>
@@ -27,7 +27,7 @@ export default function HeroSection({
               className="cursor-pointer text-white"
               onClick={() => projectsRef.current?.scrollIntoView()}
             >
-              <span className="font-montserrat text-sm font-normal hover:underline hover:underline-offset-8 lg:text-2xl">
+              <span className="font-montserrat text-xs font-normal hover:underline hover:underline-offset-8 min-[375px]:text-sm lg:text-2xl">
                 Dự án
               </span>
             </li>
@@ -35,7 +35,7 @@ export default function HeroSection({
               className="cursor-pointer text-white"
               onClick={() => servicesRef.current?.scrollIntoView()}
             >
-              <span className="font-montserrat text-sm font-normal hover:underline hover:underline-offset-8 lg:text-2xl">
+              <span className="font-montserrat text-xs font-normal hover:underline hover:underline-offset-8 min-[375px]:text-sm lg:text-2xl">
                 Dịch vụ
               </span>
             </li>
@@ -62,7 +62,7 @@ export default function HeroSection({
           <p className="absolute hidden font-montserrat text-white md:left-14 md:inline-block md:text-xs lg:bottom-[85px] lg:left-1 lg:text-xl xl:bottom-[80px] xl:left-[95px] xl:text-2xl 2xl:bottom-[80px] 2xl:left-[120px] 2xl:text-2xl">
             Ý nghĩa thiết kế
           </p>
-          <h1 className="font-beautique text-5xl leading-normal text-white sm:text-6xl md:text-7xl lg:text-9xl 2xl:text-[148px] 2xl:leading-[140px]">
+          <h1 className="font-beautique text-4xl leading-normal text-white min-[375px]:text-5xl sm:text-6xl md:text-7xl lg:text-9xl 2xl:text-[148px] 2xl:leading-[140px]">
             Mean Design
           </h1>
           <p className="font-montserrat text-xs text-white md:text-xl lg:text-3xl 2xl:text-4xl">
@@ -77,13 +77,13 @@ export default function HeroSection({
         </div>
 
         <div className="flex justify-center">
-          <p className="flex w-1/3 flex-col items-center font-montserrat text-xs text-white sm:text-2xl xl:w-[200px]">
+          <p className="flex w-1/3 flex-col items-center font-montserrat text-[9px] text-white min-[375px]:text-xs sm:text-2xl xl:w-[200px]">
             Thiết kế <span className="font-bold">SÁNG TẠO</span>
           </p>
-          <p className="flex w-1/3 flex-col items-center border-l-2 border-r-2 font-montserrat text-xs text-white sm:text-2xl xl:w-fit xl:px-11">
+          <p className="flex w-1/3 flex-col items-center border-l-2 border-r-2 font-montserrat text-[9px] text-white min-[375px]:text-xs sm:text-2xl xl:w-fit xl:px-11">
             Thi công <span className="font-bold">HOÀN THIỆN</span>
           </p>
-          <p className="flex w-1/3 flex-col items-center font-montserrat text-xs text-white sm:text-2xl xl:w-[200px]">
+          <p className="flex w-1/3 flex-col items-center font-montserrat text-[9px] text-white min-[375px]:text-xs sm:text-2xl xl:w-[200px]">
             Chi phí <span className="font-bold">TỐI ƯU</span>
           </p>
         </div>
