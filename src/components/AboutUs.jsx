@@ -6,7 +6,7 @@ export default function AboutUs({ aboutUsRef, projectsRef, servicesRef }) {
   return (
     <div
       id="about-us"
-      className="mx-auto min-h-screen max-w-sm snap-start px-3 sm:max-w-xl sm:pb-20 md:max-w-2xl md:px-0 lg:max-w-4xl xl:max-w-6xl xl:px-0 xl:pb-24 xl:pt-5 2xl:max-w-7xl"
+      className="mx-auto min-h-screen snap-start px-3 min-[320px]:max-w-[320px] min-[375px]:max-w-sm sm:max-w-xl sm:pb-20 md:max-w-2xl md:px-0 lg:max-w-4xl xl:max-w-6xl xl:px-0 xl:pb-24 xl:pt-5 2xl:max-w-7xl"
       ref={aboutUsRef}
     >
       <div className="flex justify-between">
