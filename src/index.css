@@ -173,7 +173,7 @@ html {
     font-size: 14px;
     font-weight: 400;
     position: absolute;
-    right: 28px;
+    right: 26px;
     bottom: 158px;
   }
 
@@ -244,14 +244,12 @@ html {
     font-size: 14px;
     font-weight: 400;
     position: absolute;
-    right: 18px;
+    right: 10px;
     bottom: 27px;
     width: 48px;
     line-height: 17px;
   }
-}
 
-@media only screen and (min-width: 500px) {
   #number-01::before {
     content: "dự án";
     display: inline-block;
@@ -259,8 +257,21 @@ html {
     font-size: 14px;
     font-weight: 400;
     position: absolute;
-    right: 50px;
-    bottom: 125px;
+    right: 28px;
+    bottom: 158px;
+  }
+}
+
+@media only screen and (min-width: 640px) {
+  #number-01::before {
+    content: "dự án";
+    display: inline-block;
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    position: absolute;
+    right: 53px;
+    bottom: 173px;
   }
 
   #number-02::before {
@@ -270,45 +281,9 @@ html {
     font-size: 14px;
     font-weight: 400;
     position: absolute;
-    right: 33px;
-    bottom: 13px;
-    width: 48px;
-    line-height: 17px;
-  }
-
-  #number-02::after {
-    content: ">";
-    display: inline-block;
-    font-family: beautique;
-    position: absolute;
-    right: 120px;
-    top: 115px;
-    font-size: 32px;
-  }
-}
-
-@media only screen and (min-width: 600px) {
-  #number-01::before {
-    content: "dự án";
-    display: inline-block;
-    font-family: "Montserrat", sans-serif;
-    font-size: 18px;
-    font-weight: 400;
-    position: absolute;
-    right: 45px;
-    bottom: 157px;
-  }
-
-  #number-02::before {
-    content: "khách hàng";
-    display: inline-block;
-    font-family: "Montserrat", sans-serif;
-    font-size: 14px;
-    font-weight: 400;
-    position: absolute;
-    right: 40px;
-    bottom: 27px;
-    width: 48px;
+    right: 6px;
+    bottom: 47px;
+    width: 80px;
     line-height: 17px;
   }
 
@@ -323,42 +298,6 @@ html {
   }
 }
 
-@media only screen and (min-width: 700px) {
-  #number-01::before {
-    content: "dự án";
-    display: inline-block;
-    font-family: "Montserrat", sans-serif;
-    font-size: 18px;
-    font-weight: 400;
-    position: absolute;
-    right: 77px;
-    bottom: 135px;
-  }
-
-  #number-02::before {
-    content: "khách hàng";
-    display: inline-block;
-    font-family: "Montserrat", sans-serif;
-    font-size: 14px;
-    font-weight: 400;
-    position: absolute;
-    right: 75px;
-    bottom: 27px;
-    width: 48px;
-    line-height: 17px;
-  }
-
-  #number-02::after {
-    content: ">";
-    display: inline-block;
-    font-family: beautique;
-    position: absolute;
-    right: 167px;
-    top: 120px;
-    font-size: 36px;
-  }
-}
-
 @media only screen and (min-width: 768px) {
   #number-01::before {
     content: "dự án";
@@ -367,8 +306,8 @@ html {
     font-size: 14px;
     font-weight: 400;
     position: absolute;
-    right: 30px;
-    bottom: 185px;
+    right: 28px;
+    bottom: 215px;
   }
 
   #number-02::before {
@@ -378,8 +317,8 @@ html {
     font-size: 14px;
     font-weight: 400;
     position: absolute;
-    right: -6px;
-    bottom: 67px;
+    right: -8px;
+    bottom: 48px;
     width: 90px;
     line-height: 17px;
   }
@@ -389,10 +328,10 @@ html {
     display: inline-block;
     font-family: beautique;
     position: absolute;
-    top: 115px;
+    top: 160px;
     font-size: 40px;
     font-weight: 400;
-    left: 43px;
+    left: 40px;
   }
 }
 
@@ -404,8 +343,8 @@ html {
     font-size: 16px;
     font-weight: 400;
     position: absolute;
-    right: 40px;
-    bottom: 215px;
+    right: 37px;
+    bottom: 247px;
   }
 
   #number-02::before {
@@ -415,8 +354,8 @@ html {
     font-size: 17px;
     font-weight: 300;
     position: absolute;
-    right: -5px;
-    bottom: 75px;
+    right: -10px;
+    bottom: 60px;
     width: 110px;
     line-height: 17px;
   }
@@ -426,7 +365,7 @@ html {
     display: inline-block;
     font-family: beautique;
     position: absolute;
-    top: 120px;
+    top: 167px;
     font-size: 40px;
     font-weight: 400;
     left: 55px;
@@ -465,7 +404,7 @@ html {
     font-size: 18px;
     font-weight: 300;
     position: absolute;
-    right: 55px;
+    right: 53px;
     bottom: 55px;
     width: 110px;
     line-height: 17px;
@@ -479,7 +418,7 @@ html {
     top: 140px;
     font-size: 40px;
     font-weight: 400;
-    left: 57px;
+    left: 55px;
   }
 
   #about_us_h2::before {
@@ -551,7 +490,7 @@ html {
     font-size: 24px;
     font-weight: 400;
     position: absolute;
-    right: 75px;
+    right: 70px;
     bottom: 253px;
   }
 
@@ -572,7 +511,7 @@ html {
     font-size: 24px;
     font-weight: 400;
     position: absolute;
-    right: 10px;
+    right: 5px;
     bottom: 73px;
     width: 160px;
   }

@@ -101,7 +101,7 @@ export default function Contact({ contactRef }) {
       <div
         ref={contactRef}
         id="contact"
-        className="flex min-h-screen snap-start items-center justify-center bg-[url('/contact.png')] bg-cover bg-center bg-no-repeat"
+        className="flex snap-start items-center justify-center bg-[url('/contact.png')] bg-cover bg-center bg-no-repeat py-6 sm:min-h-screen sm:py-0"
       >
         <div>
           <Toaster
@@ -116,7 +116,7 @@ export default function Contact({ contactRef }) {
             }}
           />
         </div>
-        <div className="flex max-w-sm flex-col justify-center px-3 py-6 sm:max-w-xl sm:flex-row sm:gap-4 md:max-w-2xl md:gap-6 lg:max-w-4xl xl:max-w-6xl xl:px-0 2xl:max-w-7xl">
+        <div className="flex max-w-sm flex-col px-3 sm:max-w-xl sm:flex-row sm:justify-center sm:gap-4 md:max-w-2xl md:gap-6 lg:max-w-4xl lg:py-6 xl:max-w-6xl xl:px-0 2xl:max-w-7xl">
           <div className="sm:w-1/2">
             <h2 className="mb-8 font-beautique text-2xl font-medium italic leading-10 text-white sm:mb-0 lg:text-3xl xl:text-5xl xl:leading-[70px]">
               Hiện thực hóa không gian gian mơ ước của bạn !

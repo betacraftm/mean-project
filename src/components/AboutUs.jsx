@@ -6,21 +6,21 @@ export default function AboutUs({ aboutUsRef, projectsRef, servicesRef }) {
   return (
     <div
       id="about-us"
-      className="mx-auto min-h-screen snap-start px-3 pb-8 sm:pb-20 md:max-w-2xl md:px-0 lg:max-w-4xl xl:max-w-6xl xl:pb-24 xl:pt-5 2xl:max-w-7xl"
+      className="mx-auto min-h-screen max-w-sm snap-start px-3 sm:max-w-xl sm:pb-20 md:max-w-2xl md:px-0 lg:max-w-4xl xl:max-w-6xl xl:px-0 xl:pb-24 xl:pt-5 2xl:max-w-7xl"
       ref={aboutUsRef}
     >
       <div className="flex justify-between">
-        <div className="w-64 max-[400px]:pr-2 min-[500px]:w-72 min-[600px]:w-80 min-[700px]:w-96 md:w-[400px] lg:w-[500px] xl:w-[700px] 2xl:w-3/5">
+        <div className="w-64 pr-2 sm:w-80 md:w-[400px] lg:w-[500px] xl:w-[700px] 2xl:w-3/5">
           <div className="relative">
             <h2
               id="about_us_h2"
-              className="font-beautique text-2xl font-medium text-[#193F53] min-[600px]:text-3xl lg:text-4xl 2xl:text-[56px]"
+              className="font-beautique text-2xl font-medium text-[#193F53] sm:text-3xl lg:text-4xl 2xl:text-[56px]"
             >
               Về chúng tôi
             </h2>
             <p
               id="about_us_p"
-              className="text-justify font-montserrat text-xs min-[600px]:text-sm lg:text-base 2xl:mt-5 2xl:text-lg"
+              className="text-justify font-montserrat text-xs sm:text-sm lg:text-base 2xl:mt-5 2xl:text-lg"
             >
               Với phương châm “Không gian là trải nghiệm sáng tạo” chúng tôi
               luôn đảm bảo đem đến cho khách hàng những giải pháp tối ưu nhất
@@ -32,11 +32,11 @@ export default function AboutUs({ aboutUsRef, projectsRef, servicesRef }) {
             <div className="relative w-1/2 md:w-1/3">
               <h3
                 id="number-01"
-                className="font-beautique text-3xl font-medium text-[#193F53] min-[600px]:text-4xl lg:text-5xl 2xl:text-[64px]"
+                className="font-beautique text-3xl font-medium text-[#193F53] sm:text-4xl lg:text-5xl 2xl:text-[64px]"
               >
                 100
               </h3>
-              <p className="text-justify font-montserrat text-xs min-[600px]:text-sm md:text-xs lg:text-sm xl:text-base 2xl:text-lg">
+              <p className="text-justify font-montserrat text-xs sm:text-sm lg:text-base 2xl:text-lg">
                 Ra đời vào 2023, Mean là công ty nội thất với đội ngũ nhân sự
                 trẻ, giàu nhiệt huyết và đam mê với sáng tạo, cùng với đó là sự
                 tỉ mỉ và cẩn thận trong từng giai đoạn.
@@ -44,13 +44,13 @@ export default function AboutUs({ aboutUsRef, projectsRef, servicesRef }) {
             </div>
 
             <div className="relative w-1/2 md:w-1/3">
-              <p className="mb-5 text-justify font-montserrat text-xs min-[600px]:text-sm md:text-xs lg:text-sm xl:mb-10 xl:text-base 2xl:text-lg">
+              <p className="mb-5 text-justify font-montserrat text-xs sm:text-sm lg:text-base xl:mb-10 2xl:text-lg">
                 Chúng tôi tự tin đem đến những không gian sống sáng tạo, và mang
                 đậm tính cá nhân của người chủ sở hữu.
               </p>
               <h3
                 id="number-02"
-                className="pl-5 font-beautique text-3xl font-medium leading-[50px] text-[#193F53] min-[600px]:text-4xl md:pl-0 lg:text-5xl 2xl:text-[64px]"
+                className="pl-5 font-beautique text-3xl font-medium leading-[50px] text-[#193F53] sm:text-4xl md:pl-0 lg:text-5xl 2xl:text-[64px]"
               >
                 60
               </h3>
@@ -72,7 +72,7 @@ export default function AboutUs({ aboutUsRef, projectsRef, servicesRef }) {
             </div>
           </div>
         </div>
-        <div className="mt-7 w-28 min-[600px]:w-36 md:w-52 lg:w-64 xl:w-80 2xl:flex 2xl:w-fit">
+        <div className="mt-7 w-28 sm:w-36 md:w-52 lg:w-64 xl:w-80 2xl:flex 2xl:w-fit">
           <img
             src="master-bedroom.png"
             alt="Mean Design"
@@ -89,11 +89,11 @@ export default function AboutUs({ aboutUsRef, projectsRef, servicesRef }) {
       <div className="mt-4 flex justify-between min-[768px]:hidden">
         <h3
           id="number-03"
-          className="w-28 font-beautique text-lg font-bold italic text-[#193F53] min-[600px]:w-36 min-[600px]:text-xl xl:text-[32px]"
+          className="w-28 font-beautique text-lg font-bold italic text-[#193F53] sm:text-xl"
         >
           Chất lượng & cam kết
         </h3>
-        <p className="mt-7 w-2/3 text-justify font-montserrat text-sm min-[600px]:text-base">
+        <p className="mt-7 w-2/3 text-justify font-montserrat text-xs sm:text-sm">
           Mean Design luôn chú trọng đến từng khía cạnh trong quá trình thiết kế
           và thi công. Từ việc lựa chọn vật liệu, phối màu, cho đến sắp xếp
           không gian, tất cả đều được thực hiện với tiêu chuẩn cao nhất.
@@ -103,7 +103,7 @@ export default function AboutUs({ aboutUsRef, projectsRef, servicesRef }) {
       <div className="relative scroll-mt-10">
         <p
           id="about-us-slogan"
-          className="mt-10 font-beautique text-base font-medium italic leading-3 text-[#193F53] min-[425px]:text-lg min-[425px]:leading-4 min-[570px]:w-3/5 sm:text-xl lg:text-2xl xl:text-3xl 2xl:ml-12 2xl:mt-24 2xl:text-4xl 2xl:leading-[56px]"
+          className="mt-5 font-beautique text-base font-medium italic leading-3 text-[#193F53] sm:mt-10 sm:w-3/5 sm:text-lg lg:text-2xl xl:text-3xl 2xl:ml-12 2xl:mt-24 2xl:text-4xl 2xl:leading-[56px]"
         >
           Mang đến không gian là một hành trình TRẢI NGHIỆM & SÁNG TẠO
         </p>
@@ -130,22 +130,22 @@ export default function AboutUs({ aboutUsRef, projectsRef, servicesRef }) {
         </div>
       </div>
 
-      <div className="mt-10 flex justify-center md:hidden">
-        <div className="relative left-6">
-          <img src="room-4.png" />
+      <div className="relative mx-auto mt-10 flex min-h-72 max-w-md md:hidden">
+        <div className="absolute left-0">
+          <img src="room-4.png" className="w-36 object-cover" />
           <p className="mt-2 border-l-2 border-[#193F53] pl-1 pt-1 font-beautique font-bold leading-none text-[#193F53] lg:mt-4 lg:pl-2 lg:text-3xl">
             Tinh tế
           </p>
         </div>
-        <div className="relative top-9 z-10">
-          <img src="room-5.png" />
+        <div className="absolute left-1/2 top-9 z-10 translate-x-[-50%]">
+          <img src="room-5.png" className="w-36 object-cover" />
           <p className="ml-3 mt-2 border-l-2 border-[#193F53] pl-1 font-beautique font-bold text-[#193F53] lg:mt-4 lg:pl-2 lg:text-3xl">
             Tận tâm
           </p>
         </div>
-        <div className="relative right-6">
-          <img src="room-6.png" />
-          <p className="ml-7 mt-2 border-l-2 border-[#193F53] pl-1 font-beautique font-bold text-[#193F53] lg:mt-4 lg:pl-2 lg:text-3xl">
+        <div className="absolute right-0">
+          <img src="room-6.png" className="w-36 object-cover" />
+          <p className="ml-11 mt-2 border-l-2 border-[#193F53] pl-1 font-beautique font-bold text-[#193F53] lg:mt-4 lg:pl-2 lg:text-3xl">
             Tỉ mỉ
           </p>
         </div>

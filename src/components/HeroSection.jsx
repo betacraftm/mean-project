@@ -7,7 +7,7 @@ export default function HeroSection({
 }) {
   return (
     <div className="bg-[url('/hero-image.png')] bg-cover bg-center bg-no-repeat">
-      <div className="mx-auto flex min-h-screen flex-col justify-between px-3 py-7 md:max-w-2xl md:px-0 lg:max-w-4xl xl:max-w-6xl 2xl:max-w-7xl">
+      <div className="mx-auto flex min-h-screen flex-col justify-around px-3 py-7 sm:justify-between md:max-w-2xl md:px-0 lg:max-w-4xl xl:max-w-6xl 2xl:max-w-7xl">
         <nav className="flex w-full justify-between">
           <img
             src="logo.svg"

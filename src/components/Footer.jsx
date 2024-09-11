@@ -66,11 +66,11 @@ export default function Footer({ contactRef }) {
             </div>
           </div>
           <div className="relative w-[330px]">
-            <h4 className="w-[360px] text-sm font-bold text-[#193F53] lg:text-xl">
+            <h4 className="w-[250px] text-sm font-bold text-[#193F53] lg:w-[360px] lg:text-xl">
               Hãy để lại thông tin để cùng nhau tạo nên không gian sống !
             </h4>
             <span
-              className="absolute right-[-4px] top-5 cursor-pointer lg:top-7"
+              className="absolute right-28 top-5 cursor-pointer lg:right-[-4px] lg:top-7"
               onClick={() => contactRef.current?.scrollIntoView()}
             >
               <ArrowCircleUpIcon
