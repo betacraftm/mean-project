@@ -21,7 +21,7 @@ export default function Project({ projectsRef }) {
             </span>
           </div>
 
-          <div className="mb-14 font-montserrat text-base md:mb-40 lg:mb-48 lg:text-[18px]">
+          <div className="mb-14 font-montserrat text-sm md:mb-40 md:text-base lg:mb-48 lg:text-[18px]">
             <p>
               <span className="font-bold">Vị trí:</span> Sao Đỏ - Hải Dương
             </p>
@@ -179,7 +179,7 @@ export default function Project({ projectsRef }) {
             </span>
           </div>
 
-          <div className="mb-3 font-montserrat text-base md:mb-32 lg:mb-48 lg:text-[18px]">
+          <div className="mb-9 font-montserrat text-sm md:mb-32 md:text-base lg:mb-48 lg:text-[18px]">
             <p>
               <span className="font-bold">Vị trí:</span> Hạ Long - Quảng Ninh
             </p>
