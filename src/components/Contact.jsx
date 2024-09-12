@@ -108,10 +108,10 @@ export default function Contact({ contactRef }) {
             position="bottom-center"
             toastOptions={{
               style: {
-                fontSize: "24px",
+                fontSize: "14px",
                 fontFamily: "Montserrat",
                 maxWidth: "fit-content",
-                padding: "15px",
+                padding: "12px",
               },
             }}
           />
