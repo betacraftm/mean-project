@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 import Service from "./Service";
 import Project from "./Project";
-
+import ModalImage from "./Modal";
 export default function AboutUs({ aboutUsRef, projectsRef, servicesRef }) {
   return (
     <div
@@ -73,14 +73,14 @@ export default function AboutUs({ aboutUsRef, projectsRef, servicesRef }) {
           </div>
         </div>
         <div className="mt-7 w-28 sm:w-36 md:w-52 lg:w-64 xl:w-80 2xl:flex 2xl:w-fit">
-          <img
+          <ModalImage
             src="master-bedroom.png"
-            alt="Mean Design"
             className="object-cover"
+            modalSrc="modal-image/image-1.jpg"
           />
-          <img
+          <ModalImage
             src="master-bedroom-r.png"
-            alt="Mean Design"
+            modalSrc="modal-image/image-1.jpg"
             className="mt-2 w-full object-cover min-[768px]:hidden"
           />
         </div>
@@ -111,38 +111,40 @@ export default function AboutUs({ aboutUsRef, projectsRef, servicesRef }) {
 
       <div className="ml-[65px] mt-20 hidden items-center justify-center md:flex">
         <div>
-          <img src="room-1.png" />
+          <ModalImage src="room-1.png" modalSrc="modal-image/image-2.jpg" />
           <p className="mt-2 border-l-2 border-[#193F53] pl-1 pt-1 font-beautique font-bold leading-none text-[#193F53] lg:mt-4 lg:pl-2 lg:text-3xl">
             Tinh tế
           </p>
         </div>
         <div className="relative left-[-20px] top-11 z-10 md:top-24">
-          <img src="room-2.png" />
+          <ModalImage src="room-2.png" modalSrc="modal-image/image-3.jpg" />
           <p className="ml-3 mt-2 border-l-2 border-[#193F53] pl-1 font-beautique font-bold text-[#193F53] lg:mt-4 lg:pl-2 lg:text-3xl">
             Tận tâm
           </p>
         </div>
         <div className="relative left-[-45px]">
-          <img src="room-3.png" />
+          <ModalImage src="room-3.png" modalSrc="modal-image/image-4.jpg" />
           <p className="ml-7 mt-2 border-l-2 border-[#193F53] pl-1 font-beautique font-bold text-[#193F53] lg:mt-4 lg:pl-2 lg:text-3xl">
             Tỉ mỉ
           </p>
         </div>
       </div>
 
-      <div className="relative mx-auto mt-10 flex min-h-60 min-[375px]:min-h-72 md:hidden">
+      <div className="relative mx-auto mt-10 flex min-h-60 min-[375px]:min-h-64 sm:min-h-72 md:hidden">
         <div className="absolute left-0">
-          <img
+          <ModalImage
             src="room-4.png"
+            modalSrc="modal-image/image-2.jpg"
             className="w-32 object-cover min-[375px]:w-36 sm:w-52"
           />
           <p className="mt-2 border-l border-[#193F53] pl-1 pt-1 font-beautique font-bold leading-none text-[#193F53] lg:mt-4 lg:pl-2 lg:text-3xl">
             Tinh tế
           </p>
         </div>
-        <div className="absolute left-1/2 top-9 z-10 translate-x-[-50%]">
-          <img
+        <div className="absolute left-[28%] top-9 z-10 min-[375px]:left-[30%] sm:left-[31%]">
+          <ModalImage
             src="room-5.png"
+            modalSrc="modal-image/image-3.jpg"
             className="w-32 object-cover min-[375px]:w-36 sm:w-52"
           />
           <p className="ml-3 mt-2 border-l border-[#193F53] pl-1 font-beautique font-bold text-[#193F53] lg:mt-4 lg:pl-2 lg:text-3xl">
@@ -150,8 +152,9 @@ export default function AboutUs({ aboutUsRef, projectsRef, servicesRef }) {
           </p>
         </div>
         <div className="absolute right-0">
-          <img
+          <ModalImage
             src="room-6.png"
+            modalSrc="modal-image/image-4.jpg"
             className="w-32 object-cover min-[375px]:w-36 sm:w-52"
           />
           <p className="ml-[50px] mt-2 border-l border-[#193F53] pl-1 font-beautique font-bold text-[#193F53] min-[375px]:ml-12 lg:mt-4 lg:pl-2 lg:text-3xl">

@@ -1,4 +1,6 @@
 /* eslint-disable react/prop-types */
+import ModalImage from "./Modal";
+
 export default function Project({ projectsRef }) {
   return (
     <div
@@ -39,14 +41,34 @@ export default function Project({ projectsRef }) {
 
         <div className="flex gap-4">
           <div className="flex flex-col gap-2 lg:gap-4">
-            <img src="master-1.png" className="w-full object-cover" />
-            <img src="ruou.png" className="w-full object-cover" />
+            <ModalImage
+              modalSrc="modal-image/image-1.jpg"
+              src="master-1.png"
+              className="w-full object-cover"
+            />
+            <ModalImage
+              modalSrc="modal-image/image-5.jpg"
+              src="ruou.png"
+              className="w-full object-cover"
+            />
           </div>
 
           <div>
-            <img src="khach-1.png" className="w-full object-cover" />
-            <img src="bep-1.png" className="w-full object-cover" />
-            <img src="bep-2.png" className="w-full object-cover" />
+            <ModalImage
+              modalSrc="modal-image/image-6.jpg"
+              src="khach-1.png"
+              className="w-full object-cover"
+            />
+            <ModalImage
+              modalSrc="modal-image/image-7.jpg"
+              src="bep-1.png"
+              className="w-full object-cover"
+            />
+            <ModalImage
+              modalSrc="modal-image/image-8.jpg"
+              src="bep-2.png"
+              className="w-full object-cover"
+            />
           </div>
         </div>
       </div>
@@ -80,13 +102,33 @@ export default function Project({ projectsRef }) {
 
             <div className="flex gap-2">
               <div className="flex flex-col gap-1">
-                <img src="master-mb.png" className="w-full object-cover" />
-                <img src="ruou-mb.png" className="w-full object-cover" />
+                <ModalImage
+                  src="master-mb.png"
+                  className="w-full object-cover"
+                  modalSrc="modal-image/image-1.jpg"
+                />
+                <ModalImage
+                  src="ruou-mb.png"
+                  className="w-full object-cover"
+                  modalSrc="modal-image/image-5.jpg"
+                />
               </div>
               <div className="flex flex-col gap-[6px]">
-                <img src="khach-1-mb.png" className="w-full object-cover" />
-                <img src="bep-1-mb.png" className="w-full object-cover" />
-                <img src="bep-2-mb.png" className="w-full object-cover" />
+                <ModalImage
+                  src="khach-1-mb.png"
+                  className="w-full object-cover"
+                  modalSrc="modal-image/image-6.jpg"
+                />
+                <ModalImage
+                  src="bep-1-mb.png"
+                  className="w-full object-cover"
+                  modalSrc="modal-image/image-7.jpg"
+                />
+                <ModalImage
+                  src="bep-2-mb.png"
+                  className="w-full object-cover"
+                  modalSrc="modal-image/image-8.jpg"
+                />
               </div>
             </div>
           </div>
@@ -103,19 +145,31 @@ export default function Project({ projectsRef }) {
 
         <div className="relative mt-9 flex min-h-[240px] lg:mt-16 lg:min-h-[300px] xl:min-h-[430px]">
           <div className="absolute left-0 w-[240px] lg:left-9 lg:w-[300px] xl:w-[460px]">
-            <img src="bedroom-01.png" className="w-full object-cover" />
+            <ModalImage
+              modalSrc="modal-image/image-9.jpg"
+              src="bedroom-01.png"
+              className="w-full object-cover"
+            />
             <h3 className="mt-2 border-l-2 border-[#193F53] pl-2 pt-1 font-beautique font-medium italic leading-none text-[#193F53] md:pt-0 md:text-lg lg:mt-6 lg:pl-3 lg:text-[32px]">
               Phòng ngủ 1
             </h3>
           </div>
-          <div className="absolute left-1/2 top-7 z-10 w-[240px] translate-x-[-50%] lg:w-[300px] xl:w-[460px]">
+          <div className="absolute left-[28%] top-7 z-10 w-[240px] md:left-[32%] lg:left-[33%] lg:w-[300px] xl:left-[30%] xl:w-[460px] 2xl:left-[32%]">
             <h3 className="mx-auto mb-2 max-w-fit border-l-2 border-[#193F53] pl-2 pt-1 font-beautique font-medium italic leading-none text-[#193F53] md:pt-0 md:text-lg lg:mb-4 lg:pl-3 lg:text-[32px]">
               Phòng ngủ 2
             </h3>
-            <img src="bedroom-02.png" className="w-full object-cover" />
+            <ModalImage
+              modalSrc="modal-image/image-10.jpg"
+              src="bedroom-02.png"
+              className="w-full object-cover"
+            />
           </div>
           <div className="absolute right-0 w-[240px] lg:right-9 lg:w-[300px] xl:w-[460px]">
-            <img src="bedroom-03.png" className="w-full object-cover" />
+            <ModalImage
+              modalSrc="modal-image/image-11.jpg"
+              src="bedroom-03.png"
+              className="w-full object-cover"
+            />
             <h3 className="mx-auto mr-12 mt-2 max-w-fit border-l-2 border-[#193F53] pl-2 pt-1 font-beautique font-medium italic leading-none text-[#193F53] md:pt-0 md:text-lg lg:mt-6 lg:pl-3 lg:text-[32px] xl:mr-16 2xl:mr-24">
               Phòng ngủ 3
             </h3>
@@ -133,19 +187,31 @@ export default function Project({ projectsRef }) {
 
         <div className="relative mt-5 flex min-h-[115px] min-[375px]:min-h-[130px]">
           <div className="absolute left-0 w-[130px] min-[375px]:w-[144px]">
-            <img src="bedroom-01-mb.png" className="w-full object-cover" />
+            <ModalImage
+              modalSrc="modal-image/image-9.jpg"
+              src="bedroom-01-mb.png"
+              className="w-full object-cover"
+            />
             <h3 className="mt-2 border-l border-[#193F53] pl-1 pt-1 font-beautique text-[10px] font-medium italic leading-none text-[#193F53] min-[375px]:text-[13px]">
               Phòng ngủ 1
             </h3>
           </div>
-          <div className="absolute left-1/2 top-0 z-10 w-[130px] translate-x-[-50%] min-[375px]:w-[144px]">
+          <div className="absolute left-[28%] top-0 z-10 w-[130px] min-[375px]:left-[30%] min-[375px]:w-[144px]">
             <h3 className="mx-auto mb-2 max-w-fit border-l border-[#193F53] pl-1 pt-1 font-beautique text-[10px] font-medium italic leading-none text-[#193F53] min-[375px]:text-[13px]">
               Phòng ngủ 2
             </h3>
-            <img src="bedroom-02-mb.png" className="w-full object-cover" />
+            <ModalImage
+              modalSrc="modal-image/image-10.jpg"
+              src="bedroom-02-mb.png"
+              className="w-full object-cover"
+            />
           </div>
           <div className="absolute right-0 w-[130px] min-[375px]:w-[144px]">
-            <img src="bedroom-03-mb.png" className="w-full object-cover" />
+            <ModalImage
+              modalSrc="modal-image/image-11.jpg"
+              src="bedroom-03-mb.png"
+              className="w-full object-cover"
+            />
             <h3 className="ml-auto mr-3 mt-2 max-w-fit border-l border-[#193F53] pl-1 pt-1 font-beautique text-[10px] font-medium italic leading-none text-[#193F53] min-[375px]:text-[13px]">
               Phòng ngủ 3
             </h3>
@@ -158,14 +224,34 @@ export default function Project({ projectsRef }) {
       <div className="mx-auto mt-8 hidden justify-around gap-5 sm:flex sm:max-w-xl md:max-w-none">
         <div className="flex gap-4">
           <div>
-            <img src="khach-2.png" className="w-full object-cover" />
-            <img src="khach-3.png" className="w-full object-cover" />
-            <img src="khach-4.png" className="w-full object-cover" />
+            <ModalImage
+              modalSrc="modal-image/image-12.jpg"
+              src="khach-2.png"
+              className="w-full object-cover"
+            />
+            <ModalImage
+              modalSrc="modal-image/image-13.jpg"
+              src="khach-3.png"
+              className="w-full object-cover"
+            />
+            <ModalImage
+              modalSrc="modal-image/image-14.jpg"
+              src="khach-4.png"
+              className="w-full object-cover"
+            />
           </div>
 
           <div className="flex flex-col gap-2 lg:gap-4">
-            <img src="bep-3.png" className="w-full object-cover" />
-            <img src="bep-4.png" className="w-full object-cover" />
+            <ModalImage
+              modalSrc="modal-image/image-15.jpg"
+              src="bep-3.png"
+              className="w-full object-cover"
+            />
+            <ModalImage
+              modalSrc="modal-image/image-16.jpg"
+              src="bep-4.png"
+              className="w-full object-cover"
+            />
           </div>
         </div>
 
@@ -211,13 +297,33 @@ export default function Project({ projectsRef }) {
           <div className="relative flex justify-between">
             <div className="flex gap-2">
               <div className="flex flex-col gap-[6px]">
-                <img src="khach-2-mb.png" className="w-full object-cover" />
-                <img src="khach-3-mb.png" className="w-full object-cover" />
-                <img src="khach-4-mb.png" className="w-full object-cover" />
+                <ModalImage
+                  modalSrc="modal-image/image-12.jpg"
+                  src="khach-2-mb.png"
+                  className="w-full object-cover"
+                />
+                <ModalImage
+                  modalSrc="modal-image/image-13.jpg"
+                  src="khach-3-mb.png"
+                  className="w-full object-cover"
+                />
+                <ModalImage
+                  modalSrc="modal-image/image-14.jpg"
+                  src="khach-4-mb.png"
+                  className="w-full object-cover"
+                />
               </div>
               <div className="flex flex-col gap-2 min-[375px]:gap-1">
-                <img src="bep-3-mb.png" className="w-full object-cover" />
-                <img src="bep-4-mb.png" className="w-full object-cover" />
+                <ModalImage
+                  modalSrc="modal-image/image-15.jpg"
+                  src="bep-3-mb.png"
+                  className="w-full object-cover"
+                />
+                <ModalImage
+                  modalSrc="modal-image/image-16.jpg"
+                  src="bep-4-mb.png"
+                  className="w-full object-cover"
+                />
               </div>
             </div>
 
@@ -249,19 +355,31 @@ export default function Project({ projectsRef }) {
 
         <div className="relative mt-9 flex min-h-[240px] lg:mt-16 lg:min-h-[300px] xl:min-h-[430px]">
           <div className="absolute left-0 w-[240px] lg:left-9 lg:w-[300px] xl:w-[460px]">
-            <img src="bedroom-4.png" className="w-full object-cover" />
+            <ModalImage
+              modalSrc="modal-image/image-17.jpg"
+              src="bedroom-4.png"
+              className="w-full object-cover"
+            />
             <h3 className="mt-2 border-l-2 border-[#193F53] pl-2 pt-1 font-beautique font-medium italic leading-none text-[#193F53] md:pt-0 md:text-lg lg:mt-6 lg:pl-3 lg:text-[32px]">
               Phòng ngủ 1
             </h3>
           </div>
-          <div className="absolute left-1/2 top-7 z-10 w-[240px] translate-x-[-50%] lg:w-[300px] xl:w-[460px]">
+          <div className="absolute left-[28%] top-7 z-10 w-[240px] md:left-[32%] lg:left-[33%] lg:w-[300px] xl:left-[30%] xl:w-[460px] 2xl:left-[32%]">
             <h3 className="mx-auto mb-2 max-w-fit border-l-2 border-[#193F53] pl-2 pt-1 font-beautique font-medium italic leading-none text-[#193F53] md:pt-0 md:text-lg lg:mb-4 lg:pl-3 lg:text-[32px]">
               Phòng ngủ 2
             </h3>
-            <img src="bedroom-5.png" className="w-full object-cover" />
+            <ModalImage
+              modalSrc="modal-image/image-18.jpg"
+              src="bedroom-5.png"
+              className="w-full object-cover"
+            />
           </div>
           <div className="absolute right-0 w-[240px] lg:right-9 lg:w-[300px] xl:w-[460px]">
-            <img src="bedroom-6.png" className="w-full object-cover" />
+            <ModalImage
+              modalSrc="modal-image/image-19.jpg"
+              src="bedroom-6.png"
+              className="w-full object-cover"
+            />
             <h3 className="mx-auto mr-12 mt-2 max-w-fit border-l-2 border-[#193F53] pl-2 pt-1 font-beautique font-medium italic leading-none text-[#193F53] md:pt-0 md:text-lg lg:mt-6 lg:pl-3 lg:text-[32px] xl:mr-16 2xl:mr-24">
               Phòng ngủ 3
             </h3>
@@ -279,19 +397,31 @@ export default function Project({ projectsRef }) {
 
         <div className="relative mt-5 flex min-h-[115px] min-[375px]:min-h-[130px]">
           <div className="absolute left-0 w-[130px] min-[375px]:w-[144px]">
-            <img src="bedroom-4-mb.png" className="w-full object-cover" />
+            <ModalImage
+              modalSrc="modal-image/image-17.jpg"
+              src="bedroom-4-mb.png"
+              className="w-full object-cover"
+            />
             <h3 className="mt-2 border-l border-[#193F53] pl-1 pt-1 font-beautique text-[10px] font-medium italic leading-none text-[#193F53] min-[375px]:text-[13px]">
               Phòng ngủ 1
             </h3>
           </div>
-          <div className="absolute left-1/2 top-0 z-10 w-[130px] translate-x-[-50%] min-[375px]:w-[144px]">
+          <div className="absolute left-[28%] top-0 z-10 w-[130px] min-[375px]:left-[30%] min-[375px]:w-[144px]">
             <h3 className="mx-auto mb-2 max-w-fit border-l border-[#193F53] pl-1 pt-1 font-beautique text-[10px] font-medium italic leading-none text-[#193F53] min-[375px]:text-[13px]">
               Phòng ngủ 2
             </h3>
-            <img src="bedroom-5-mb.png" className="w-full object-cover" />
+            <ModalImage
+              modalSrc="modal-image/image-18.jpg"
+              src="bedroom-5-mb.png"
+              className="w-full object-cover"
+            />
           </div>
           <div className="absolute right-0 w-[130px] min-[375px]:w-[144px]">
-            <img src="bedroom-6-mb.png" className="w-full object-cover" />
+            <ModalImage
+              modalSrc="modal-image/image-19.jpg"
+              src="bedroom-6-mb.png"
+              className="w-full object-cover"
+            />
             <h3 className="ml-auto mr-3 mt-2 max-w-fit border-l border-[#193F53] pl-1 pt-1 font-beautique text-[10px] font-medium italic leading-none text-[#193F53] min-[375px]:text-[13px]">
               Phòng ngủ 3
             </h3>

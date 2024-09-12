@@ -18,7 +18,7 @@ export default function Footer({ contactRef }) {
     <>
       <ThemeProvider theme={theme}>
         <CssBaseline />
-        <footer className="mx-auto flex max-w-sm flex-col justify-between gap-4 border-b border-black px-3 py-16 font-btbeau sm:max-w-xl md:max-w-2xl lg:max-w-4xl lg:gap-0 lg:gap-8 xl:max-w-6xl xl:flex-row xl:px-0 2xl:max-w-7xl">
+        <footer className="mx-auto flex max-w-sm flex-col justify-between gap-4 border-b border-black px-3 py-16 font-btbeau sm:max-w-xl md:max-w-2xl lg:max-w-4xl lg:gap-8 xl:max-w-6xl xl:flex-row xl:px-0 2xl:max-w-7xl">
           <div>
             <h4 className="mb-2 text-sm font-bold text-[#193F53] lg:mb-4 lg:text-xl xl:mb-9">
               Văn phòng
