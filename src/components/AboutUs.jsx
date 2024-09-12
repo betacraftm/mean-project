@@ -136,7 +136,7 @@ export default function AboutUs({ aboutUsRef, projectsRef, servicesRef }) {
             src="room-4.png"
             className="w-32 object-cover min-[375px]:w-36 sm:w-52"
           />
-          <p className="mt-2 border-l-2 border-[#193F53] pl-1 pt-1 font-beautique font-bold leading-none text-[#193F53] lg:mt-4 lg:pl-2 lg:text-3xl">
+          <p className="mt-2 border-l border-[#193F53] pl-1 pt-1 font-beautique font-bold leading-none text-[#193F53] lg:mt-4 lg:pl-2 lg:text-3xl">
             Tinh tế
           </p>
         </div>
@@ -145,7 +145,7 @@ export default function AboutUs({ aboutUsRef, projectsRef, servicesRef }) {
             src="room-5.png"
             className="w-32 object-cover min-[375px]:w-36 sm:w-52"
           />
-          <p className="ml-3 mt-2 border-l-2 border-[#193F53] pl-1 font-beautique font-bold text-[#193F53] lg:mt-4 lg:pl-2 lg:text-3xl">
+          <p className="ml-3 mt-2 border-l border-[#193F53] pl-1 font-beautique font-bold text-[#193F53] lg:mt-4 lg:pl-2 lg:text-3xl">
             Tận tâm
           </p>
         </div>
@@ -154,7 +154,7 @@ export default function AboutUs({ aboutUsRef, projectsRef, servicesRef }) {
             src="room-6.png"
             className="w-32 object-cover min-[375px]:w-36 sm:w-52"
           />
-          <p className="ml-12 mt-2 border-l-2 border-[#193F53] pl-1 font-beautique font-bold text-[#193F53] min-[375px]:ml-11 lg:mt-4 lg:pl-2 lg:text-3xl">
+          <p className="ml-12 mt-2 border-l border-[#193F53] pl-1 font-beautique font-bold text-[#193F53] min-[375px]:ml-11 lg:mt-4 lg:pl-2 lg:text-3xl">
             Tỉ mỉ
           </p>
         </div>
