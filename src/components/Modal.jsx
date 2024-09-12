@@ -23,7 +23,7 @@ const ModalImage = ({ src, className, modalSrc }) => {
         >
           <div className="relative">
             <button
-              className="absolute right-0 top-0 cursor-pointer text-3xl font-bold text-white"
+              className="fixed right-0 top-0 m-4 cursor-pointer text-3xl font-bold text-white"
               onClick={closeModal}
             >
               &times;
