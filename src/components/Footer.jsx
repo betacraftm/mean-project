@@ -1,6 +1,7 @@
 /* eslint-disable react/prop-types */
 import ArrowCircleUpIcon from "@mui/icons-material/ArrowCircleUp";
 import { ThemeProvider, createTheme, CssBaseline } from "@mui/material";
+
 export default function Footer({ contactRef }) {
   const theme = createTheme({
     breakpoints: {

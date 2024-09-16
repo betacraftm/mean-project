@@ -2,6 +2,7 @@
 import Service from "./Service";
 import Project from "./Project";
 import ModalImage from "./Modal";
+
 export default function AboutUs({ aboutUsRef, projectsRef, servicesRef }) {
   return (
     <div

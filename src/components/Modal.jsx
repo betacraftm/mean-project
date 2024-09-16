@@ -1,20 +1,36 @@
 /* eslint-disable react/prop-types */
 import { useState } from "react";
+import ScrollAnimation from "react-animate-on-scroll";
+import "animate.css";
 
 const ModalImage = ({ src, className, modalSrc }) => {
   const [isOpen, setIsOpen] = useState(false);
-
   const openModal = () => setIsOpen(true);
   const closeModal = () => setIsOpen(false);
+  const windowWidth = screen.width;
 
   return (
     <div>
-      <img
-        src={src}
-        className={className}
-        alt="thumbnail"
-        onClick={openModal}
-      />
+      {windowWidth >= 1440 ? (
+        <ScrollAnimation
+          animateIn="animate__animated animate__fadeInUp"
+          animateOnce
+        >
+          <img
+            src={src}
+            className={className}
+            alt="thumbnail"
+            onClick={openModal}
+          />
+        </ScrollAnimation>
+      ) : (
+        <img
+          src={src}
+          className={className}
+          alt="thumbnail"
+          onClick={openModal}
+        />
+      )}
 
       {isOpen && (
         <div
