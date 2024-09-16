@@ -102,31 +102,6 @@ html {
   bottom: 83px;
 }
 
-/* #about-us-slogan::before {
-  content: '"';
-  display: inline-block;
-  font-size: 64px;
-  rotate: 180deg;
-  transform: scaleX(-1);
-  color: #193f53b2;
-  font-family: beautique;
-  font-style: normal;
-  position: relative;
-  top: -20px;
-} */
-
-/* #about-us-slogan::after {
-  content: '"';
-  display: inline-block;
-  font-size: 64px;
-  font-family: beautique;
-  transform: scaleX(-1);
-  color: #193f53b2;
-  position: relative;
-  font-style: normal;
-  bottom: -45px;
-} */
-
 .MuiList-root {
   background-color: black !important;
   padding: 15px !important;
