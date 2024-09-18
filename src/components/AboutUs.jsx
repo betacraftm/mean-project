@@ -104,7 +104,7 @@ export default function AboutUs({ aboutUsRef, projectsRef, servicesRef }) {
       <div className="relative scroll-mt-10">
         <p
           id="about-us-slogan"
-          className="mt-5 font-beautique text-base font-medium italic leading-3 text-[#193F53] sm:mt-10 sm:w-3/5 sm:text-lg lg:text-2xl xl:text-3xl 2xl:ml-12 2xl:mt-24 2xl:text-4xl 2xl:leading-[56px]"
+          className="mt-5 font-beautique text-base font-medium italic leading-3 text-[#193F53] sm:mt-10 sm:w-3/5 sm:text-lg sm:leading-[15px] lg:text-2xl xl:text-3xl xl:leading-[18px] 2xl:ml-12 2xl:mt-24 2xl:text-4xl"
         >
           Mang đến không gian là một hành trình TRẢI NGHIỆM & SÁNG TẠO
         </p>
