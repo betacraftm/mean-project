@@ -574,3 +574,12 @@ html {
     width: 160px;
   }
 }
+
+#images_container::-webkit-scrollbar {
+  display: none;
+}
+
+#images_container {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
