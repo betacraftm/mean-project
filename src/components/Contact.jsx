@@ -268,6 +268,7 @@ export default function Contact({ contactRef }) {
                       borderColor: "white",
                     },
                     "& .MuiSvgIcon-root": {
+                      color: "white",
                       height: {
                         xs: "24px",
                         lg: "32px",
@@ -275,6 +276,12 @@ export default function Contact({ contactRef }) {
                       width: {
                         xs: "24px",
                         lg: "32px",
+                      },
+                      top: {
+                        xs: "0px",
+                        sm: "10px",
+                        lg: "8px",
+                        xl: "5px",
                       },
                     },
                     "& .MuiSelect-select": {
@@ -305,6 +312,9 @@ export default function Contact({ contactRef }) {
                       md: "16px",
                       lg: "20px",
                     },
+                    lineHeight: {
+                      sm: "35px",
+                    },
                   },
                   marginBottom: { xs: "18px", sm: "30px" },
                 }}
@@ -332,12 +342,6 @@ export default function Contact({ contactRef }) {
                   label="Service"
                   defaultValue={""}
                   sx={{
-                    "& .MuiSvgIcon-root": {
-                      color: "white",
-                      top: "5px",
-                      height: "32px",
-                      width: "32px",
-                    },
                     "& .MuiSelect-select": {
                       fontFamily: "Montserrat",
                       fontSize: "20px",
@@ -386,7 +390,7 @@ export default function Contact({ contactRef }) {
                     }}
                     value={"Dịch vụ"}
                   >
-                    Thiết kế dịch vụ (nhà hàng, quán cà phê,...)
+                    Thiết kế nhà hàng, quán cà phê,...
                   </MenuItem>
                   <MenuItem
                     sx={{
