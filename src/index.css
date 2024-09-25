@@ -51,7 +51,7 @@ html {
 
 .MuiList-root {
   background-color: black !important;
-  padding: 15px !important;
+  padding: 8px !important;
   font-size: 10px !important;
 }
 
@@ -274,6 +274,12 @@ html {
 }
 
 @media only screen and (min-width: 640px) {
+  .MuiList-root {
+    background-color: black !important;
+    padding: 12px !important;
+    font-size: 10px !important;
+  }
+
   #number-01::before {
     content: "dự án";
     display: inline-block;
@@ -310,6 +316,12 @@ html {
 }
 
 @media only screen and (min-width: 768px) {
+  .MuiList-root {
+    background-color: black !important;
+    padding: 15px !important;
+    font-size: 10px !important;
+  }
+
   #number-01::before {
     content: "dự án";
     display: inline-block;
