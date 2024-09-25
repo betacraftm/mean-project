@@ -63,7 +63,7 @@ export default function Footer({ contactRef }) {
             <div className="flex flex-col gap-2 text-xs lg:text-base">
               <p className="text-[#4B4B4B]">Thiết kế nội thất nhà ở</p>
               <p className="text-[#4B4B4B]">Thiết kế nội thất dịch vụ</p>
-              <p className="text-[#4B4B4B]">Thiết kế nội thất trọn gói</p>
+              <p className="text-[#4B4B4B]">Thiết kế văn phòng</p>
             </div>
           </div>
           <div className="relative w-[330px]">

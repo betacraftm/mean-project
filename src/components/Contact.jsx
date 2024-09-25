@@ -364,9 +364,9 @@ export default function Contact({ contactRef }) {
                         borderBottom: "1px solid white",
                       },
                     }}
-                    value={"Nhà ở"}
+                    value={"Nội thất nhà ở"}
                   >
-                    Nhà ở
+                    Thiết kế nội thất nhà ở
                   </MenuItem>
                   <MenuItem
                     sx={{
@@ -386,7 +386,7 @@ export default function Contact({ contactRef }) {
                     }}
                     value={"Dịch vụ"}
                   >
-                    Dịch vụ
+                    Thiết kế dịch vụ (nhà hàng, quán cà phê,...)
                   </MenuItem>
                   <MenuItem
                     sx={{
@@ -403,9 +403,9 @@ export default function Contact({ contactRef }) {
                         },
                       },
                     }}
-                    value={"Thi công"}
+                    value={"Cơ quan, văn phòng"}
                   >
-                    Thi công
+                    Thiết kế cơ quan, văn phòng,...
                   </MenuItem>
                 </Select>
               </FormControl>
