@@ -49,62 +49,10 @@ html {
   scroll-behavior: smooth;
 }
 
-#about_us_h2::before {
-  content: '"';
-  display: inline-block;
-  font-size: 128px;
-  rotate: 180deg;
-  transform: scaleX(-1);
-  height: 50px;
-  line-height: 120px;
-  padding-right: 0.5rem;
-  color: #193f53b2;
-  font-family: beautique;
-}
-
-#number-01::after {
-  content: "+";
-  display: inline-block;
-  font-family: beautique;
-  position: absolute;
-  top: -45px;
-  font-size: 80px;
-}
-
-#number-01::before {
-  content: "dự án";
-  display: inline-block;
-  font-family: "Montserrat", sans-serif;
-  font-size: 24px;
-  font-weight: 400;
-  position: absolute;
-  right: 75px;
-  bottom: 245px;
-}
-
-#number-02::after {
-  content: "+";
-  display: inline-block;
-  font-family: beautique;
-  position: absolute;
-  top: 115px;
-  font-size: 80px;
-}
-
-#number-02::before {
-  content: "khách hàng";
-  display: inline-block;
-  font-family: "Montserrat", sans-serif;
-  font-size: 24px;
-  font-weight: 400;
-  position: absolute;
-  right: 25px;
-  bottom: 83px;
-}
-
 .MuiList-root {
   background-color: black !important;
   padding: 15px !important;
+  font-size: 10px !important;
 }
 
 @media only screen and (max-width: 1340px) {
@@ -198,6 +146,11 @@ html {
     position: relative;
     font-style: normal;
     bottom: -45px;
+  }
+
+  .MuiButtonBase-root {
+    font-size: 10px !important;
+    padding: 10px 8px !important;
   }
 }
 
@@ -440,6 +393,11 @@ html {
     padding-right: 0.5rem;
     color: #193f53b2;
     font-family: beautique;
+  }
+
+  .MuiButtonBase-root {
+    font-size: 16px !important;
+    padding: 15px 8px !important;
   }
 }
 
